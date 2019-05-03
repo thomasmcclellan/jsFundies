@@ -10,7 +10,7 @@ let last = fruits[fruits.length - 1]
 
 // Loop over an Array
 fruits.forEach((item, index, array) => {
-    return item
+  return item
 })
 
 // Add to the end of an Array

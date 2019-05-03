@@ -38,7 +38,7 @@ The range of elements processed by --every-- is set before the first invocation 
 */
 
 function isBigEnough(element, index, array) {
-    return element >= 10
+  return element >= 10
 }
 
 [12, 5, 8, 130, 44].every(isBigEnough) // false

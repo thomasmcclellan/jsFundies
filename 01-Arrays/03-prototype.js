@@ -28,7 +28,7 @@ The following code works fine in ES5 and below.  However, in ES6 and later, the 
 var keys = []
 
 with (Array.prototype) {
-    keys.push('somthing')
+  keys.push('somthing')
 }
 
 Object.keys(Array.prototype[Symbol.unscopables]) // ["copyWithin", "entries", "fill", "find", "findIndex", "includes", "keys", "values"]

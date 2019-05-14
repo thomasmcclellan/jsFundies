@@ -8,7 +8,7 @@ However, adding non-standard methods to the array object can cause issues later,
 
 //* Fun Fact: Array.prototype itself is an Array.
 
-Array.isArray(Array.prototype) // true
+console.log(Array.isArray(Array.prototype)) // true
 
 
 //* Array.prototype[@@unscopables]
@@ -25,12 +25,12 @@ The default array properties that are excluded from --with-- bindings are: copyw
 The following code works fine in ES5 and below.  However, in ES6 and later, the --Array.prototype.keys()-- method was introduced.  That means that inside --with-- environments, 'keys' would now be the method and not the variable.  This is where now the built-in @@unscopables Array.prototype[@@unscopables] symbol property comes into play and prevents that some of the Array methods are being scoped into the --with-- statement.
 */
 
-var keys = []
+const keys = []
 
 with (Array.prototype) {
   keys.push('somthing')
 }
 
-Object.keys(Array.prototype[Symbol.unscopables]) // ["copyWithin", "entries", "fill", "find", "findIndex", "includes", "keys", "values"]
+console.log(Object.keys(Array.prototype[Symbol.unscopables])) // ["copyWithin", "entries", "fill", "find", "findIndex", "includes", "keys", "values"]
 
 //? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/@@unscopables

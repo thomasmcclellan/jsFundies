@@ -1,9 +1,9 @@
 //* 4/23/2019
 
-Array.isArray([1, 2, 3]) // true
-Array.isArray({ foo: 123 }) // false
-Array.isArray('foobar') // false
-Array.isArray(undefined) //false
+console.log(Array.isArray([1, 2, 3])) // true
+console.log(Array.isArray({ foo: 123 })) // false
+console.log(Array.isArray('foobar')) // false
+console.log(Array.isArray(undefined)) //false
 
 /*
 Syntax:
@@ -23,12 +23,13 @@ let iframe = document.createElement('iframe')
 document.body.appendChild(iframe)
 xArray = window.frames[window.frames.length - 1].Array
 
-let arr = new xArray(1,2,3) // [1, 2, 3]
+let arr = new xArray(1,2,3) 
+console.log(arr) // [1, 2, 3]
 
 //* Correctly checking for Array
-Array.isArray(arr) // true
+console.log(Array.isArray(arr)) // true
 
 //* Considered harmful, because doesn't work through iframes
-arr instanceof Array // false
+console.log(arr instanceof Array) // false
 
 //? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray

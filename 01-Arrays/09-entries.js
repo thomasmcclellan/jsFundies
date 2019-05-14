@@ -3,8 +3,8 @@
 let array1 = ['a', 'b', 'c']
 let iterator1 = array1.entries()
 
-console.log(iterator1.next().value) // Array [0, 'a']
-console.log(iterator1.next().value) // Array [1, 'b']
+console.log(iterator1.next().value) // [0, 'a']
+console.log(iterator1.next().value) // [1, 'b']
 
 /*
 Syntax:
@@ -17,7 +17,7 @@ A new --Array-- iterator object
 const a = ['a', 'b', 'c']
 
 for (const [index, element] of a.entries()) {
-  console.log(index, element) // [0, 'a'] [1, 'b'] [2, 'c']
+  console.log(index, element) // 0 'a', 1, 'b', 2 'c'
 }
 
 let iterator = a.entries()

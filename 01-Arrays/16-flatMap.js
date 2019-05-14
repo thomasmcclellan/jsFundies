@@ -2,16 +2,16 @@
 
 const arr1 = [1, 2, 3, 4]
 
-arr1.map(x => [x * 2]) // [[2], [4], [6], [8]]
+console.log(arr1.map(x => [x * 2])) // [[2], [4], [6], [8]]
 
-arr1.flatMap(x => [x * 2]) // [2, 4, 6, 8]
-arr1.flatMap(x => [[x * 2]]) // [[2], [4], [6], [8]]
+console.log(arr1.flatMap(x => [x * 2])) // [2, 4, 6, 8]
+console.log(arr1.flatMap(x => [[x * 2]])) // [[2], [4], [6], [8]]
 
 const arr2 = ['It is sunny in', '', 'California']
 
-arr2.map(x => x.split(' ')) // [['It', 'is', 'sunny', 'in'], [''], ['California']]
+console.log(arr2.map(x => x.split(' '))) // [['It', 'is', 'sunny', 'in'], [''], ['California']]
 
-arr2.flatMap(x => x.split(' ')) // ['It', 'is', 'sunny', 'in', '', 'California']
+console.log(arr2.flatMap(x => x.split(' '))) // ['It', 'is', 'sunny', 'in', '', 'California']
 
 /*
 Syntax:

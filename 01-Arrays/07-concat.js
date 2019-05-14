@@ -3,7 +3,7 @@
 let array1 = ['a', 'b', 'c']
 let array2 = ['d', 'e', 'f']
 
-array1.concat(array2) // Array ['a', 'b', 'c', 'd', 'e', 'f']
+console.log(array1.concat(array2)) // ['a', 'b', 'c', 'd', 'e', 'f']
 
 /*
 Syntax:
@@ -26,18 +26,21 @@ const num1 = [1, 2, 3]
 const num2 = [4, 5, 6]
 const num3 = [7, 8, 9]
 
-const numbers = num1.concat(num2, num3) // [1, 2, 3, 4, 5, 6, 7, 8, 9]
+const numbers = num1.concat(num2, num3) 
+console.log(numbers) // [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 
 const letters = ['a', 'b', 'c']
 
-const alphaNumeric = letters.concat(1, [2, 3]) // ['a', 'b', 'c', 1, 2, 3]
+const alphaNumeric = letters.concat(1, [2, 3]) 
+console.log(alphaNumeric) // ['a', 'b', 'c', 1, 2, 3]
 
 
 const number1 = [[1]]
 const number2 = [2, [3]]
 
-const moreNumbers = number1.concat(number2) // [[1], 2, [3]]
+const moreNumbers = number1.concat(number2) 
+console.log(moreNumbers) // [[1], 2, [3]]
 
 number1[0].push(4)
 

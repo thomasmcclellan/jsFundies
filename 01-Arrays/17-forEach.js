@@ -50,7 +50,7 @@ counter.prototype.add = function(array) {
 
 const obj = new counter()
 obj.add([2, 5, 9])
-obj.count // 3
-obj.sum // 16
+console.log(obj.count) // 3
+console.log(obj.sum) // 16
 
 //? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach

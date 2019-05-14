@@ -1,9 +1,9 @@
 //* 4/26/2019
 
 let array1 = ['a', 'b', 'c', 'd', 'e']
-array1.copyWithin(0, 3, 4) // Array ['d', 'b', 'c', 'd', 'e']
+console.log(array1.copyWithin(0, 3, 4)) // ['d', 'b', 'c', 'd', 'e']
 
-array1.copyWithin(1, 3) // Array ['d', 'd', 'e', 'd', 'e']
+console.log(array1.copyWithin(1, 3)) // ['d', 'd', 'e', 'd', 'e']
 
 /*
 Syntax:

@@ -4,7 +4,7 @@ let from1 = Array.from('foo')
 console.log(from1) // ['f', 'o', 'o']
 
 let from2 = Array.from([1, 2, 3], x => x + x)
-console.log(from2) // Array [2, 4, 6]
+console.log(from2) // [2, 4, 6]
 
 /*
 Syntax:

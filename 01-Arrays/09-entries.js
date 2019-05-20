@@ -26,4 +26,11 @@ for (let e of iterator) {
   console.log(e) // [0, 'a'] [1, 'b'] [2, 'c']
 }
 
+/*
+Browser Compatibility:
+Full Support: All others
+Compatibility Unknown: NA
+No Support: IE
+*/
+
 //? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries

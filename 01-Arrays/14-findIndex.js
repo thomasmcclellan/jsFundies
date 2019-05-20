@@ -56,4 +56,11 @@ const index = fruits.findIndex(fruit => fruit === 'blueberries')
 console.log(index) // 3
 console.log(fruits[index]) // blueberries
 
+/*
+Browser Compatibility:
+Full Support: All others
+Compatibility Unknown: NA
+No Support: IE
+*/
+
 //? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex

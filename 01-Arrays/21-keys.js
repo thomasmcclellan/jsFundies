@@ -22,4 +22,11 @@ const denseKeys = [...arr.keys()]
 console.log(sparseKeys) // ['0', '2']
 console.log(denseKeys) // [0, 1, 2]
 
+/*
+Browser Compatibility:
+Full Support: All others
+Compatibility Unknown: NA
+No Support: IE
+*/
+
 //? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/keys

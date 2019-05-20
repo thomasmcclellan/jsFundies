@@ -44,4 +44,11 @@ console.log([1, 2, 3].fill(4, 3, 5))             // [1, 2, 3]
 console.log(Array(3).fill(4));                   // [4, 4, 4]
 console.log([].fill.call({ length: 3 }, 4))      // { 0: 4, 1: 4, 2: 4, length: 3 }
 
+/*
+Browser Compatibility:
+Full Support: All others
+Compatibility Unknown: NA
+No Support: IE
+*/
+
 //? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill

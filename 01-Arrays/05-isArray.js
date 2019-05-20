@@ -32,4 +32,11 @@ console.log(Array.isArray(arr)) // true
 //* Considered harmful, because doesn't work through iframes
 console.log(arr instanceof Array) // false
 
+/*
+Browser Compatibility:
+Full Support: All
+Compatibility Unknown: NA
+No Support: NA
+*/
+
 //? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray

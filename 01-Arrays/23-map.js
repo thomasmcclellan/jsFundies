@@ -71,4 +71,11 @@ const a = map.call('Hello World', x => x.charCodeAt(0))
 
 console.log(a) // [72, 101, 108, 108, 111, 32, 87, 111, 114, 108, 100]
 
+/*
+Browser Compatibility:
+Full Support: All
+Compatibility Unknown: NA
+No Support: NA
+*/
+
 //? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map

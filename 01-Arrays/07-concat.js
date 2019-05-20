@@ -46,4 +46,11 @@ number1[0].push(4)
 
 console.log(moreNumbers) // [[1, 4], 2, [3]]
 
+/*
+Browser Compatibility:
+Full Support: All
+Compatibility Unknown: NA
+No Support: NA
+*/
+
 //? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat

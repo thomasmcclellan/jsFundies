@@ -22,4 +22,11 @@ The --Array.of()-- method creates a new --Array-- instance from a variable numbe
 The difference between --Array.of()-- and the --Array-- constructor is the handling of integer arguments: --Array.of(7)-- creates an arra with a single element (7); whereas --Array(7)-- creates an empty array with a --length-- property of 7 (refer to example above).
 */
 
+/*
+Browser Compatibility:
+Full Support: All others
+Compatibility Unknown: NA
+No Support: IE
+*/
+
 //? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/of

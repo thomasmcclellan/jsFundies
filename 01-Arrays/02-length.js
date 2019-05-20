@@ -19,4 +19,11 @@ const arr = [1, 2]
 arr.length = 5 //* set array length to 5 while currently 2
 console.log(arr) // [1, 2, , , ]
 
+/*
+Browser Compatibility:
+Full Support: All
+Compatibility Unknown: NA
+No Support: NA
+*/
+
 //? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length

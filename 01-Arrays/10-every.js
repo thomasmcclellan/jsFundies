@@ -47,4 +47,11 @@ console.log([12, 54, 18, 130, 44].every(isBigEnough)) // true
 console.log([12, 5, 8, 130, 44].every(x => x >= 10)) // false
 console.log([12, 54, 18, 130, 44].every(x => x >= 10)) // true
 
+/*
+Browser Compatibility:
+Full Support: All
+Compatibility Unknown: NA
+No Support: NA
+*/
+
 //? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every

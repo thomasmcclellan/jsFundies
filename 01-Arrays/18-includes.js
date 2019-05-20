@@ -20,4 +20,11 @@ Return value:
 A boolean which is --true-- if the value of --valueToFind-- is found within the array (or part of the array indicated by --fromIndex--, if specified).  Values of 0 are all considered to be equal regardless of sign (0 || -0; but --false-- != 0).
 */
 
+/*
+Browser Compatibility:
+Full Support: All others
+Compatibility Unknown: NA
+No Support: IE
+*/
+
 //? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes

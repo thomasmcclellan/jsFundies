@@ -27,4 +27,11 @@ The --find-- method executes the --callback-- function once for each index of th
 --find-- does not mutate the array on which it is called.
 */
 
+/*
+Browser Compatibility:
+Full Support: All others
+Compatibility Unknown: NA
+No Support: IE
+*/
+
 //? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find

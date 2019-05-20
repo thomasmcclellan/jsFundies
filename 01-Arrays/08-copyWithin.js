@@ -26,4 +26,11 @@ The --copyWithin-- function is intentionally generic, it does not require that i
 The --copyWithin-- method is a mutable method.  It does not alter the length of --this--, but will change its content and create new properties if necessary.
 */
 
+/*
+Browser Compatibility:
+Full Support: All others
+Compatibility Unknown: NA
+No Support: IE
+*/
+
 //? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin

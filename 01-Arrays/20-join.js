@@ -25,4 +25,11 @@ function joined(first, second, third) {
 
 joined(1, 'a', true)
 
+/*
+Browser Compatibility:
+Full Support: All
+Compatibility Unknown: NA
+No Support: NA
+*/
+
 //? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join

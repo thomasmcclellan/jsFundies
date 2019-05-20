@@ -36,4 +36,11 @@ The --length-- property of the --from()-- method is 1.
 In ES6, the class syntax allows for sub-classing of both built-in and user defined classes; as a result, static methods such as --Array.from()-- are "inherited" by subclasses of --Array-- and create new instances of the subclass, not --Array--.
 */
 
+/*
+Browser Compatibility:
+Full Support: All others
+Compatibility Unknown: NA
+No Support: IE
+*/
+
 //? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from

@@ -28,4 +28,11 @@ If a --thisArg-- parameter is provided to --filter--, it will be used as the cal
 --filter-- does not mutate the array on which it is called.
 */
 
+/*
+Browser Compatibility:
+Full Support: All
+Compatibility Unknown: NA
+No Support: NA
+*/
+
 //? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter

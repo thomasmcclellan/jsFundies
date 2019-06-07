@@ -1,4 +1,4 @@
-//* 5//2019
+//* 6/11/2019
 
 
 
@@ -17,4 +17,4 @@ Compatibility Unknown: NA
 No Support: NA
 */
 
-//? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/@@iterator
+//? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer/isView

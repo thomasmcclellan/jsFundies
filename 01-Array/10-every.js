@@ -49,7 +49,7 @@ console.log([12, 54, 18, 130, 44].every(x => x >= 10)) // true
 
 /*
 Browser Compatibility:
-Full Support: All
+*Full Support: All
 Compatibility Unknown: NA
 No Support: NA
 */

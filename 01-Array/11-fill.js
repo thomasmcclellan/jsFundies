@@ -46,9 +46,9 @@ console.log([].fill.call({ length: 3 }, 4))      // { 0: 4, 1: 4, 2: 4, length: 
 
 /*
 Browser Compatibility:
-Full Support: All others
+*Full Support: All others
 Compatibility Unknown: NA
-No Support: IE
+!No Support: IE
 */
 
 //? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill

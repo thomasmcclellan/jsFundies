@@ -26,7 +26,7 @@ The first index of the element in the array that matches; -1 is not found.
 
 /*
 Browser Compatibility:
-Full Support: All
+*Full Support: All
 Compatibility Unknown: NA
 No Support: NA
 */

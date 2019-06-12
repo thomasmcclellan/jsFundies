@@ -19,7 +19,7 @@ The new --length-- property of the object upon which the method was called
 
 /*
 Browser Compatibility:
-Full Support: All
+*Full Support: All
 Compatibility Unknown: NA
 No Support: NA
 */

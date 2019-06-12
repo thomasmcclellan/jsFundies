@@ -15,11 +15,11 @@ A new array iterator object
 
 /*
 Browser Compatibility:
-Full Support: All others
+*Full Support: All others
 Compatibility Unknown: NA
-No Support: 
-  IE
-  Samsung Internet
+!No Support: 
+!  IE
+!  Samsung Internet
 */
 
 //? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/values

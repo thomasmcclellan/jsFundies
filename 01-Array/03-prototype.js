@@ -35,7 +35,7 @@ console.log(Object.keys(Array.prototype[Symbol.unscopables])) // ["copyWithin", 
 
 /*
 Browser Compatibility:
-Full Support: All
+*Full Support: All
 Compatibility Unknown: NA
 No Support: NA
 */

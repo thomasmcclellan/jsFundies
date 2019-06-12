@@ -31,13 +31,13 @@ A new array with each element being the result of the callback function and flat
 
 /*
 Browser Compatibility:
-Full Support: All others
+*Full Support: All others
 Compatibility Unknown: NA
-No Support: 
-  Edge
-  IE
-  Edge Mobile
-  Samsung Internet
+!No Support: 
+!  Edge
+!  IE
+!  Edge Mobile
+!  Samsung Internet
 */
 
 //? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap

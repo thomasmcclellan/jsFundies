@@ -43,4 +43,71 @@ let removedItems = vegetables.splice(pos, n)
 // Copy an Array
 let shallowCopy = fruits.slice()
 
+/*
+Properties:
+  Array.length
+  get Array[@@species]
+  Array.prototype
+
+Methods:
+  Array.from()
+  Array.isArray()
+  Array.of()
+
+Instances:
+*All --Array-- instances inherit from --Array.prototype--.  The prototype object of the Array constructor can be modified to affect all Array instances.
+
+  Properties:
+    Array.prototype.constructor
+    Array.prototype.length
+    Array.prototype[@@unscopables]
+
+  Methods:
+    Mutator Methods:
+    *These methods modify the array.
+      Array.prototype.copyWithin()
+      Array.prototype.fill()
+      Array.prototype.pop()
+      Array.prototype.push()
+      Array.prototype.reverse()
+      Array.prototype.shift()
+      Array.prototype.sort()
+      Array.prototype.splice()
+      Array.prototype.unshift()
+
+    Accessor Methods:
+    *These methods do not modify the array and return some representation of the array.
+      Array.prototype.concact()
+      Array.prototype.includes()
+      Array.prototype.indexOf()
+      Array.prototype.join()
+      Array.prototype.lastIndexOf()
+      Array.prototype.slice()
+      !Array.prototype.toSource() (Not standard)
+      Array.prototype.toString()
+      Array.prototype.toLocaleString()
+    
+    Iteration Methods:
+      Array.prototype.entries()
+      Array.prototype.every()
+      Array.prototype.filter()
+      Array.prototype.find()
+      Array.prototype.findIndex()
+      Array.prototype.forEach()
+      Array.prototype.keys()
+      Array.prototype.map()
+      Array.prototype.reduce()
+      Array.prototype.reduceRight()
+      Array.prototype.some()
+      Array.prototype.values()
+      Array.prototype[@@iterator]()
+*/
+
+/*
+Browser Compatibility:
+*Full Support: All
+Compatibility Unknown: NA
+No Support: NA
+*/
+
 //? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array

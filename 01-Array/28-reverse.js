@@ -35,7 +35,7 @@ console.log(arrObj) // { 0: 'Third', 1: 'Second', 2: 'First', length: 3 }
 
 /*
 Browser Compatibility:
-Full Support: All
+*Full Support: All
 Compatibility Unknown: NA
 No Support: NA
 */

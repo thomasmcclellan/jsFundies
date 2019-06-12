@@ -25,7 +25,7 @@ An array containing the deleted elements.  If only one element is removed, an ar
 
 /*
 Browser Compatibility:
-Full Support: All
+*Full Support: All
 Compatibility Unknown: NA
 No Support: NA
 */

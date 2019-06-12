@@ -73,7 +73,7 @@ console.log(a) // [72, 101, 108, 108, 111, 32, 87, 111, 114, 108, 100]
 
 /*
 Browser Compatibility:
-Full Support: All
+*Full Support: All
 Compatibility Unknown: NA
 No Support: NA
 */

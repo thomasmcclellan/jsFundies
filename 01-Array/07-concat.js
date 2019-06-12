@@ -48,7 +48,7 @@ console.log(moreNumbers) // [[1, 4], 2, [3]]
 
 /*
 Browser Compatibility:
-Full Support: All
+*Full Support: All
 Compatibility Unknown: NA
 No Support: NA
 */

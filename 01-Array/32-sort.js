@@ -26,7 +26,7 @@ The sorted array.  NOTE: the array is sorted IN PLACE, and no copy is made.
 
 /*
 Browser Compatibility:
-Full Support: All
+*Full Support: All
 Compatibility Unknown: NA
 No Support: NA
 */

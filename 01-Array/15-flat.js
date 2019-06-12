@@ -24,13 +24,13 @@ A new array with the sub-array elements concatenated into it
 
 /*
 Browser Compatibility:
-Full Support: All others
+*Full Support: All others
 Compatibility Unknown: NA
-No Support: 
-  Edge
-  IE
-  Edge Mobile
-  Samsung Internet
+!No Support: 
+!  Edge
+!  IE
+!  Edge Mobile
+!  Samsung Internet
 */
 
 //? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat

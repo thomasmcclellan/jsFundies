@@ -21,7 +21,7 @@ console.log(arr) // [1, 2, , , ]
 
 /*
 Browser Compatibility:
-Full Support: All
+*Full Support: All
 Compatibility Unknown: NA
 No Support: NA
 */

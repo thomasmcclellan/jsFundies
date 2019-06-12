@@ -24,9 +24,9 @@ console.log(denseKeys) // [0, 1, 2]
 
 /*
 Browser Compatibility:
-Full Support: All others
+*Full Support: All others
 Compatibility Unknown: NA
-No Support: IE
+!No Support: IE
 */
 
 //? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/keys

@@ -21,7 +21,7 @@ The last index of the element in the array; -1 is not found.
 
 /*
 Browser Compatibility:
-Full Support: All
+*Full Support: All
 Compatibility Unknown: NA
 No Support: NA
 */

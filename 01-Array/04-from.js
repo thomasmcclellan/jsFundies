@@ -38,9 +38,9 @@ In ES6, the class syntax allows for sub-classing of both built-in and user defin
 
 /*
 Browser Compatibility:
-Full Support: All others
+*Full Support: All others
 Compatibility Unknown: NA
-No Support: IE
+!No Support: IE
 */
 
 //? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from

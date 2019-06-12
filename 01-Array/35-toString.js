@@ -14,7 +14,7 @@ A string representing the elements of the array
 
 /*
 Browser Compatibility:
-Full Support: All
+*Full Support: All
 Compatibility Unknown: NA
 No Support: NA
 */

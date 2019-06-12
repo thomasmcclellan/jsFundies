@@ -55,7 +55,7 @@ console.log(obj.sum) // 16
 
 /*
 Browser Compatibility:
-Full Support: All
+*Full Support: All
 Compatibility Unknown: NA
 No Support: NA
 */

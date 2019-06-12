@@ -27,7 +27,7 @@ joined(1, 'a', true)
 
 /*
 Browser Compatibility:
-Full Support: All
+*Full Support: All
 Compatibility Unknown: NA
 No Support: NA
 */

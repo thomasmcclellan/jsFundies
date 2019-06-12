@@ -30,7 +30,7 @@ If a --thisArg-- parameter is provided to --filter--, it will be used as the cal
 
 /*
 Browser Compatibility:
-Full Support: All
+*Full Support: All
 Compatibility Unknown: NA
 No Support: NA
 */

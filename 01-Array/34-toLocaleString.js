@@ -19,21 +19,21 @@ A string representing the elements of the array
 /*
 Browser Compatibility:
 Generally:
-Full Support: All
+*Full Support: All
 Compatibility Unknown: NA
 No Support: NA
 
 With --locales-- paremeter:
-Full Support: Firefox
-Compatibility Unknown: All others
-No Support: Firefox for Android
+*Full Support: Firefox
+?Compatibility Unknown: All others
+!No Support: Firefox for Android
 
 With --options-- paremeter:
-Full Support: Firefox
-Compatibility Unknown: All others
-No Support: 
-  Android webview
-  Firefox for Android
+*Full Support: Firefox
+?Compatibility Unknown: All others
+!No Support: 
+!  Android webview
+!  Firefox for Android
 */
 
 //? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toLocaleString

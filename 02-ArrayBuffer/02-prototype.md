@@ -1,5 +1,5 @@
 ##### 6/13/2019
-# ArrayBuffer.prototype
+# `ArrayBuffer.prototype`
 
 ## Description:
 The `ArrayBuffer.prototype` property represents the prototype for the `ArrayBuffer` object.

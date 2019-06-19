@@ -32,7 +32,14 @@ console.log(arr2.flatMap(x => x.split(' '))) // ['It', 'is', 'sunny', 'in', '', 
 ## Return value:
 A new array with each element being the result of the callback function and flattened to a depth of 1.
 
-  ---
+---
+
+## Specifications
+| Specification | Year | Status | Comment |
+|---|---|---|---|
+| ECMAScript Latest Draft | 2019 | Draft | Initial definition |
+
+---
 
 ## Browser Compatibility:
 <span style="color: lightgreen">**Full Support**: All others</span><br>

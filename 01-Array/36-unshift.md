@@ -24,8 +24,14 @@ The new `length` property of the object upon which the method was called
 
 ---
 
-## Description:
-
+## Specifications
+| Specification | Year | Status | Comment |
+|---|---|---|---|
+| ECMAScript 3rd Edition | 1999 | Standard | Initial definition. Implemented in JS 1.2 |
+| ECMAScript 5.1 | 2011 | Standard |  |
+| ECMAScript 2015 (6th Edition) | 2015 | Standard |  |
+| ECMAScript 2016 | 2016 | Standard |  |
+| ECMAScript Latest Draft | 2019 | Draft |  |
 
 ---
 

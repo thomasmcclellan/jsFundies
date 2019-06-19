@@ -31,6 +31,15 @@ The `copyWithin` method is a mutable method.  It does not alter the length of `t
 
 ---
 
+## Specifications
+| Specification | Year | Status | Comment |
+|---|---|---|---|
+| ECMAScript 2015 (6th Edition) | 2015 | Standard | Initial definition |
+| ECMAScript 2016 | 2016 | Standard |  |
+| ECMAScript Latest Draft | 2019 | Draft |  |
+
+---
+
 ## Browser Compatibility:
 <span style="color: lightgreen">**Full Support**: All others</span>  
 **Compatibility Unknown**: NA  

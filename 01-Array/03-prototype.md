@@ -40,6 +40,19 @@ with (Array.prototype) {
 
 console.log(Object.keys(Array.prototype[Symbol.unscopables])) // ["copyWithin", "entries", "fill", "find", "findIndex", "includes", "keys", "values"]
 ```
+
+---
+
+## Specifications
+| Specification | Year | Status | Comment |
+|---|---|---|---|
+| ECMAScript 1st Edition | 1997 | Standard | Initial definition |
+| ECMAScript 3rd Edition | 1999 | Standard |  |
+| ECMAScript 5.1 | 2011 | Standard |  |
+| ECMAScript 2015 (6th Edition) | 2015 | Standard |  |
+| ECMAScript 2016 | 2016 | Standard |  |
+| ECMAScript Latest Draft | 2019 | Draft |  |
+
 ---
 
 ## Browser Compatibility:

@@ -104,6 +104,18 @@ let shallowCopy = fruits.slice()
 
 ---
 
+## Specifications
+| Specification | Year | Status | Comment |
+|---|---|---|---|
+| ECMAScript 1st Edition | 1997 | Standard | Initial definition |
+| ECMAScript 3rd Edition | 1999 | Standard |  |
+| ECMAScript 5.1 | 2011 | Standard | New methods added: `isArray`, `indexOf`, `lastIndexOf`, `every`, `some`, `forEach`, `map`, `filter`, `reduce`, `reduceRight` |
+| ECMAScript 2015 (6th Edition) | 2015 | Standard | New methods added: `from`, `of`, `find`, `findIndex`, `fill`, `copyWithin` |
+| ECMAScript 2016 | 2016 | Standard | New method added: `includes` |
+| ECMAScript Latest Draft | 2019 | Draft |  |
+
+---
+
 ## Browser Compatibility:
 <span style="color: lightgreen">**Full Support**: All</span>  
 **Compatibility Unknown**: NA  

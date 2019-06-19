@@ -25,6 +25,14 @@ A boolean which is `true` if the value of `valueToFind` is found within the arra
 
 ---
 
+## Specifications
+| Specification | Year | Status | Comment |
+|---|---|---|---|
+| ECMAScript 2016 | 2016 | Standard | Initial definition |
+| ECMAScript Latest Draft | 2019 | Draft |  |
+
+---
+
 ## Browser Compatibility:
 <span style="color: lightgreen">**Full Support**: All others</span>  
 **Compatibility Unknown**: NA  

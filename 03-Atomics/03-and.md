@@ -1,0 +1,37 @@
+##### MM/DD/YYYY
+# ``
+
+```js
+
+```
+
+---
+
+## Syntax:
+``
+
+* ** **:  
+
+## Return value:
+
+
+---
+
+## Description:
+
+
+---
+
+## Browser Compatibility:
+<span style="color: lightgreen">**Full Support**: All</span>  
+<span style="color: lightblue">**Compatibility Unknown**: NA</span>  
+<span style="color: red">**No Support**: NA</span>
+
+<span style="color: ">**No Support**:  
+  &nbsp; &nbsp; &nbsp; IE  
+  &nbsp; &nbsp; &nbsp; Samsung Internet  
+</span>
+
+---
+
+[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/and)

@@ -23,6 +23,15 @@ The `byteLength` property is an accessor property whose set accessor function is
 
 ---
 
+## Specifications
+| Specification | Year | Status | Comment |
+|---|---|---|---|
+| ECMAScript 2015 (6th Edition) | 2015 | Standard | Initial definition in an ECMA standard |
+| ECMAScript 2016 | 2016 | Standard |  |
+| ECMAScript Latest Draft | 2019 | Draft |  |
+
+---
+
 ## Browser Compatibility:
 <span style="color: lightgreen">**Full Support**: All</span>  
 **Compatibility Unknown**: NA  

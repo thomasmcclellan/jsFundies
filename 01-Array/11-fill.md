@@ -53,6 +53,15 @@ console.log([].fill.call({ length: 3 }, 4)) // { 0: 4, 1: 4, 2: 4, length: 3 }
 
 ---
 
+## Specifications
+| Specification | Year | Status | Comment |
+|---|---|---|---|
+| ECMAScript 2015 (6th Edition) | 2015 | Standard | Initial definition |
+| ECMAScript 2016 | 2016 | Standard |  |
+| ECMAScript Latest Draft | 2019 | Draft |  |
+
+---
+
 ## Browser Compatibility:
 <span style="color: lightgreen">**Full Support**: All others</span>  
 **Compatibility Unknown**: NA  

@@ -26,6 +26,13 @@ A string representing the elements of the array
 
 ---
 
+## Specifications
+| Specification | Year | Status | Comment |
+|---|---|---|---|
+| ECMAScript Latest Draft | 2019 | Draft | Initial definition was in ECMAScript 3 |
+
+---
+
 ## Browser Compatibility:
 ### Generally:
 <span style="color: lightgreen">**Full Support**: All</span>  

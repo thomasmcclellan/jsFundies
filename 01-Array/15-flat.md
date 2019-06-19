@@ -27,6 +27,13 @@ A new array with the sub-array elements concatenated into it
 
 ---
 
+## Specifications
+| Specification | Year | Status | Comment |
+|---|---|---|---|
+| ECMAScript Latest Draft | 2019 | Draft | Initial definition |
+
+---
+
 ## Browser Compatibility:
 <span style="color: lightgreen">**Full Support**: All others</span><br>
 **Compatibility Unknown**: NA  

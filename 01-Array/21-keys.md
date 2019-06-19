@@ -29,6 +29,14 @@ console.log(sparseKeys) // ['0', '2']
 console.log(denseKeys) // [0, 1, 2]
 ```
 
+---
+
+## Specifications
+| Specification | Year | Status | Comment |
+|---|---|---|---|
+| ECMAScript 2015 (6th Edition) | 2015 | Standard | Initial definition |
+| ECMAScript 2016 | 2016 | Standard |  |
+| ECMAScript Latest Draft | 2019 | Draft |  |
 
 ---
 

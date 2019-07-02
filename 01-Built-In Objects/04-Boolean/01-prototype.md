@@ -1,31 +1,44 @@
-##### MM/DD/YYYY
-# ``
+##### 6/21/2019
+# `Boolean.prototype`
 
 ```js
+const flag = new Boolean()
 
+console.log(flag) // false
 ```
 
 ---
 
-## Syntax:
-``
+## Description:
+The `Boolean.prototype` property representaas the prototype for the `Boolean` constructor.
 
-* ** **:  
+| Property attributes of `Boolean.prototype` ||
+|---|---|
+| Writable | no |
+| Enumerable | no |
+| Configurable | no |
 
-## Return value:
-
+`Boolean` instances inherit from `Boolean.prototype`.  You can use the constructor's prototype object to add properties or methods to all `Boolean` instances.
 
 ---
 
-## Description:
+## Properties:
+`Boolean.prototype.constructor`  
+  > Returns the function that created an instnace's prototype.  This is the `Boolean` function by default.
 
+## Methods:
+`Boolean.prototype.toString`  
+  > Returns a string of either `'true'` or `'false` depending upon the value of the object.  Overrides the `Object.prototype.toString()` method.  
+  
+`Boolean.prototype.valueOf()`  
+  > Returns the primitive value of the `Boolean` object.  Overrides the `Object.prototype.valueOf()` method.
 
 ---
 
 ## Specifications
 | Specification | Year | Status | Comment |
 |---|---|---|---|
-| ECMAScript 1st Edition | 1997 | Standard | Initial definition |
+| ECMAScript 1st Edition | 1997 | Standard | Initial definition.  Implemented in JS 1.0 |
 | ECMAScript 3rd Edition | 1999 | Standard |  |
 | ECMAScript 5.1 | 2011 | Standard |  |
 | ECMAScript 2015 (6th Edition) | 2015 | Standard |  |
@@ -36,13 +49,8 @@
 
 ## Browser Compatibility:
 <span style="color: lightgreen">**Full Support**: All</span>  
-<span style="color: lightblue">**Compatibility Unknown**: NA</span>  
-<span style="color: red">**No Support**: NA</span>
-
-<span style="color: ">**No Support**:  
-  &nbsp; &nbsp; &nbsp; IE  
-  &nbsp; &nbsp; &nbsp; Samsung Internet  
-</span>
+**Compatibility Unknown**: NA  
+**No Support**: NA
 
 ---
 

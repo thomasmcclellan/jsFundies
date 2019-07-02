@@ -9,30 +9,51 @@ The `Atomic` operations are installed on an `Atomics` module.  Unlike the other 
 ---
 
 ## Properties:
-`Atomics[Symbol.toStringTag]`  
+**`Atomics[Symbol.toStringTag]`**
+  > The value of this property is `Atomics`.
 
 ## Methods:
 ### Atomic Operations:
-**When memory is shared, multiple threads can read and write the same data in memory.  Atomic oeprations make sure that predictable values are written adn read, that operations are finished before the next operation starts and that operations are not interrupted.**  
-`Atomics.add()`  
-`Atomics.and()`  
-`Atomics.compareExchange()`  
-`Atomics.exchange()`  
-`Atomics.load()`  
-`Atomics.or()`  
-`Atomics.store()`  
-`Atomics.sub()`  
-`Atomics.xor()`
+When memory is shared, multiple threads can read and write the same data in memory.  Atomic oeprations make sure that predictable values are written adn read, that operations are finished before the next operation starts and that operations are not interrupted. 
+
+**`Atomics.add()`**  
+  > Adds the provided value to the existing value at the specified index of the array.  Returns the old value in that index.
+
+**`Atomics.and()`** 
+  > Computes a bitwise **AND** on the value at the specified index of the array with the provided value.  Returns the old value in that index.
+
+**`Atomics.compareExchange()`**  
+  > Stores a vlaue at the specified index of the array, if it equals a value.  Returns the old value.
+
+**`Atomics.exchange()`**  
+  > Stores a value at the specified index of the array.  Returns the old value.
+
+**`Atomics.load()`**  
+  > Returns the value at the specified index of the array.
+
+**`Atomics.or()`**  
+  > Computes a bitwise **OR** on the value at the specified index of the array with the provided value.  Returns the old value of that index.
+
+**`Atomics.store()`**  
+  > Stores a value at the specified index of the array.  Returns the value.
+
+**`Atomics.sub()`**  
+  > Subtracts a vlaue at the specified index of the array.  Returns the old value at that index.
+
+**`Atomics.xor()`**
+  > Computes a bitwise **XOR** on the value at the specified index of the array with the provided value.  Returns the old value at that index.
 
 ### Wait and Notify:
-**The `wait()` and `notify()` methods are modeled on Linux futexes ('fast user-space mutex') and provide ways for waiting until a certain condition becomes true and are typically used as blocking constructs.**
+The `wait()` and `notify()` methods are modeled on Linux futexes ('fast user-space mutex') and provide ways for waiting until a certain condition becomes true and are typically used as blocking constructs.
 
-`Atomics.wait()`  
-`Atomics.notify()`
-`Atomics.isLockFree(size)`
+**`Atomics.wait()`** 
+  > Verifies that the specified index of the array still contains a value and sleeps awaiting or times out. Returns either 'ok', 'not-equal', or 'timed-out'. If waiting is not allowed in the calling agent then it throws an <span style="color: red">Error</span> exception (most browsers will not allow wait() on the browser's main thread).
 
-### Methods:
-`ArrayBuffer.prototype.slice()`
+**`Atomics.notify()`**
+  > Notifies agents that are waiting on the specified index of the array. Returns the number of agents that were notified.
+
+**`Atomics.isLockFree(size)`**
+  > An optimization primitive that can be used to determine whether to use locks or atomic operations. Returns true, if an atomic operation on arrays of the given element size will be implemented using a hardware atomic operation (as opposed to a lock). Experts only.
 
 ---
 

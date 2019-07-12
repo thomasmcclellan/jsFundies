@@ -1,34 +1,31 @@
-##### mm/dd/yyyy
-# ``
+##### 7/09/2019
+# `DataView.prototype.byteOffset`
 
 ```js
+const buffer = new ArrayBuffer(16)
+const view = new DataView(buffer, 12, 4) // from byte 12 for the next 4 bytes
 
+console.log(view.byteOffset) // 12
 ```
 
 ---
 
 ## Syntax:
-``
-
-* ****: 
-
-## Return value:
-
+`dataview.byteOffset`
 
 ---
 
 ## Description:
+The `byteOffset` accessor property reprsents the offset (in bytes) of this view fromthe start of `ArrayBuffer` or `SharedArrayBuffer`.
 
+The `byteOffset` property is an accessor property whose set accessor function is `undefined`, meaning that you can only read this property.  The value is estabished when a `DataView` is constructed and cannot be changed.
 
 ---
 
 ## Specifications
 | Specification | Year | Status | Comment |
 |---|---|---|---|
-| ECMAScript 1st Edition | 1997 | Standard | Initial definition |
-| ECMAScript 3rd Edition | 1999 | Standard |  |
-| ECMAScript 5.1 | 2011 | Standard |  |
-| ECMAScript 2015 (6th Edition) | 2015 | Standard |  |
+| ECMAScript 2015 (6th Edition) | 2015 | Standard | Initial definition |
 | ECMAScript 2016 | 2016 | Standard |  |
 | ECMAScript Latest Draft | 2019 | Draft |  |
 
@@ -36,13 +33,8 @@
 
 ## Browser Compatibility:
 <span style="color: lightgreen">**Full Support**: All</span>  
-<span style="color: lightblue">**Compatibility Unknown**: NA</span>  
-<span style="color: red">**No Support**: NA</span>
-
-<span style="color: ">**Full Support**:  
-  &nbsp; &nbsp; &nbsp; Something  
-  &nbsp; &nbsp; &nbsp; Something  
-</span>
+**Compatibility Unknown**: NA  
+**No Support**: NA
 
 ---
 

@@ -1,34 +1,42 @@
-##### mm/dd/yyyy
-# ``
+##### 7/16/2019
+# `DataView.prototype.getUint16()`
 
 ```js
+const buffer = new ArrayBuffer(16)
+const view = new DataView(buffer)
 
+view.setUint16(1, 65535) // max unsigned 16-bit integer
+
+console.log(view.getUint16(1)) // 65535
 ```
 
 ---
 
 ## Syntax:
-``
+`dataview.getUint16(byteOffset [, littleEndian])`
 
-* ****: 
+* **byteOffset**: offset, in byte, from the start of the view where to read the data
+* **littleEndian** (Optional): indicates whether the 16-bit int is short in little (or big) endian format.  If `false` or `undefined`, a big-endian value is read.  
 
 ## Return value:
+An unsigned 16-bit integer number.
 
+## Errors Thrown:
+**<span style="color: red">RangeError</span>**: thrown if the `byteOffset` is set such as it would read beyond the end of the view.
 
 ---
 
 ## Description:
+The `getUint16()` method gets an unsigned 16-bit integer (unsigned short) at the specified byte offset from the start of the `DataView`.
 
+There is no alignment constraint; multi-byte values may be fetched from any offset.
 
 ---
 
 ## Specifications
 | Specification | Year | Status | Comment |
 |---|---|---|---|
-| ECMAScript 1st Edition | 1997 | Standard | Initial definition |
-| ECMAScript 3rd Edition | 1999 | Standard |  |
-| ECMAScript 5.1 | 2011 | Standard |  |
-| ECMAScript 2015 (6th Edition) | 2015 | Standard |  |
+| ECMAScript 2015 (6th Edition) | 2015 | Standard | Initial definition |
 | ECMAScript 2016 | 2016 | Standard |  |
 | ECMAScript Latest Draft | 2019 | Draft |  |
 
@@ -36,13 +44,8 @@
 
 ## Browser Compatibility:
 <span style="color: lightgreen">**Full Support**: All</span>  
-<span style="color: lightblue">**Compatibility Unknown**: NA</span>  
-<span style="color: red">**No Support**: NA</span>
-
-<span style="color: ">**Full Support**:  
-  &nbsp; &nbsp; &nbsp; Something  
-  &nbsp; &nbsp; &nbsp; Something  
-</span>
+**Compatibility Unknown**: NA  
+**No Support**: NA
 
 ---
 

@@ -86,15 +86,25 @@ Given a non-standard date string of 'March 7, 2014', `parse()` assumes a local t
 ---
 
 ## Browser Compatibility:
-### `parse`:
-<span style="color: lightgreen">**Full Support**: All</span>  
-**Compatibility Unknown**: NA  
-**No Support**: NA
+| `parse()` | ISO 8601 Format | Browser | Platform |
+|---|---|---|---|
+| <span style="color: lightgreen">**Yes**</span> | <span style="color: lightgreen">**Yes**</span> | **Chrome** | Desktop | 
+| <span style="color: lightgreen">**12**</span> | <span style="color: lightgreen">**12**</span> | **Edge** || 
+| <span style="color: lightgreen">**1**</span> | <span style="color: lightgreen">**4**</span> | **Firefox** || 
+| <span style="color: lightgreen">**Yes**</span> | <span style="color: lightgreen">**9**</span> | **IE** || 
+| <span style="color: lightgreen">**Yes**</span> | <span style="color: lightgreen">**Yes**</span> | **Opera** || 
+| <span style="color: lightgreen">**Yes**</span> | <span style="color: lightgreen">**Yes**</span> | **Safari** || 
+| <span style="color: lightgreen">**Yes**</span> | <span style="color: lightgreen">**Yes**</span> | **Android Webview** | Mobile | 
+| <span style="color: lightgreen">**Yes**</span> | <span style="color: lightgreen">**Yes**</span> | **Chrome for Android** || 
+| <span style="color: lightgreen">**4**</span> | <span style="color: lightgreen">**4**</span> | **Firefox for Android** || 
+| <span style="color: lightgreen">**Yes**</span> | <span style="color: lightgreen">**Yes**</span> | **Opera for Android** || 
+| <span style="color: lightgreen">**Yes**</span> | <span style="color: lightgreen">**Yes**</span> | **Safari on iOS** || 
+| <span style="color: lightgreen">**Yes**</span> | <span style="color: lightgreen">**Yes**</span> | **Samsung Internet** || 
+| <span style="color: lightgreen">**Yes**</span> | <span style="color: grey">**?**</span> | **Node.js** | Server | 
 
-### ISO 8601 Format:
-<span style="color: lightgreen">**Full Support**: All others</span>  
-<span style="color: lightblue">**Compatibility Unknown**: Node.js</span>  
-**No Support**: NA
+<span style="color: lightgreen">Full Support</span>  
+<span style="color: grey">Compatibility Unknown</span>  
+<span style="color: red">No Support</span>
 
 ---
 

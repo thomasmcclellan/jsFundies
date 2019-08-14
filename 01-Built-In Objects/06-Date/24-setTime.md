@@ -1,34 +1,37 @@
-##### MM/DD/YYYY
-# ``
+##### 8/14/2019
+# `Date.prototype.setTime()`
 
 ```js
+const event1 = new Date('October 28, 1987')
+const event2 = new Date()
 
+event2.setTime(event1.getTime())
+
+console.log(event1) // 1987-10-28T05:00:00.000Z
+console.log(event2) // 1987-10-28T05:00:00.000Z
 ```
 
 ---
 
 ## Syntax:
-``
+`dateObj.setTime(timeValue)`
 
-* ****: 
+* **timeValue**: `number` representing the number of milliseconds since 01 Jan, 1970, 00:00:00 UTC
 
 ## Return value:
-
-
-## Errors Thrown:
-<span style="color: red">**RangeError**</span>: 
+A `number` representing the number of milliseconds between January 01, 1970, 00:00:00 UTC and the updated date (effectively, the value of the argument).
 
 ---
 
 ## Description:
-
+The `setTime()` method sets the `Date` object to the time represented by a number of milliseconds since January 01, 1970, 00:00:00 UTC.
 
 ---
 
 ## Specifications
 | Specification | Year | Status | Comment |
 |---|---|---|---|
-| ECMAScript 1st Edition | 1997 | Standard | Initial definition |
+| ECMAScript 1st Edition | 1997 | Standard | Initial definition.  Implemented in JS 1.0 |
 | ECMAScript 3rd Edition | 1999 | Standard |  |
 | ECMAScript 5.1 | 2011 | Standard |  |
 | ECMAScript 2015 (6th Edition) | 2015 | Standard |  |
@@ -39,13 +42,8 @@
 
 ## Browser Compatibility:
 <span style="color: lightgreen">**Full Support**: All</span>  
-<span style="color: lightblue">**Compatibility Unknown**: NA</span>  
-<span style="color: red">**No Support**: NA</span>
-
-<span style="color: ">**Full Support**:  
-  &nbsp; &nbsp; &nbsp; Chrome  
-  &nbsp; &nbsp; &nbsp; Firefox  
-</span>
+**Compatibility Unknown**: NA  
+**No Support**: NA
 
 ---
 

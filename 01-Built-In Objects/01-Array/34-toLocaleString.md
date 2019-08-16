@@ -34,23 +34,25 @@ A string representing the elements of the array
 ---
 
 ## Browser Compatibility:
-### Generally:
-<span style="color: lightgreen">**Full Support**: All</span>  
-**Compatibility Unknown**: NA  
-**No Support**: NA
+| `toLocaleString()` | _Optional_ `locales` parameter | _Optional_ `options` parameter | Browser | Platform |
+|---|---|---|---|---|
+| <span style="color: lightgreen">**Yes**</span> |<span style="color: grey">**?**</span> |<span style="color: grey">**?**</span> | **Chrome** | Desktop | 
+| <span style="color: lightgreen">**12**</span> |<span style="color: grey">**?**</span> |<span style="color: grey">**?**</span> | **Edge** || 
+| <span style="color: lightgreen">**1**</span> |<span style="color: lightgreen">**52**</span> |<span style="color: lightgreen">**52**</span> | **Firefox** || 
+| <span style="color: lightgreen">**Yes**</span> |<span style="color: grey">**?**</span> |<span style="color: grey">**?**</span> | **IE** || 
+| <span style="color: lightgreen">**Yes**</span> |<span style="color: grey">**?**</span> |<span style="color: grey">**?**</span> | **Opera** || 
+| <span style="color: lightgreen">**Yes**</span> |<span style="color: grey">**?**</span> |<span style="color: grey">**?**</span> | **Safari** || 
+| <span style="color: lightgreen">**Yes**</span> |<span style="color: grey">**?**</span> |<span style="color: red">**X**</span> | **Android Webview** | Mobile | 
+| <span style="color: lightgreen">**Yes**</span> |<span style="color: grey">**?**</span> |<span style="color: grey">**?**</span> | **Chrome for Android** || 
+| <span style="color: lightgreen">**4**</span> |<span style="color: red">**X**</span> |<span style="color: red">**X**</span> | **Firefox for Android** || 
+| <span style="color: lightgreen">**Yes**</span> |<span style="color: grey">**?**</span> |<span style="color: grey">**?**</span> | **Opera for Android** || 
+| <span style="color: lightgreen">**Yes**</span> |<span style="color: grey">**?**</span> |<span style="color: grey">**?**</span> | **Safari on iOS** || 
+| <span style="color: lightgreen">**Yes**</span> |<span style="color: grey">**?**</span> |<span style="color: grey">**?**</span> | **Samsung Internet** || 
+| <span style="color: lightgreen">**Yes**</span> |<span style="color: grey">**?**</span> |<span style="color: grey">**?**</span> | **Node.js** | Server | 
 
-### With `locales` Parameter:
-<span style="color: lightgreen">**Full Support**: Firefox</span>  
-<span style="color: lightblue">**Compatibility Unknown**: All others</span>  
-<span style="color: red">**No Support**: Firefox for Android</span>
-
-### With `options` Parameter:
-<span style="color: lightgreen">**Full Support**: Firefox</span>  
-<span style="color: lightblue">**Compatibility Unknown**: All others</span>  
-<span style="color: red">**No Support**:  
-  &nbsp; &nbsp; &nbsp; Android webview  
-  &nbsp; &nbsp; &nbsp; Firefox for Android  
-</span>
+<span style="color: lightgreen">Full Support</span>  
+<span style="color: grey">Compatibility Unknown</span>  
+<span style="color: red">No Support</span>
 
 ---
 

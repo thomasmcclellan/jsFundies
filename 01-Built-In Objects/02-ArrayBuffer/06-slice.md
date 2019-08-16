@@ -41,9 +41,27 @@ The `slice` method copies up to, but not including, the byte indicated by the `e
 ---
 
 ## Browser Compatibility:
-<span style="color: lightgreen">**Full Support**: All</span>  
-**Compatibility Unknown**: NA  
-**No Support**: NA
+| `slice()` | Browser | Platform |
+|---|---|---|
+| <span style="color: lightgreen">**Yes**</span> | **Chrome** | Desktop | 
+| <span style="color: lightgreen">**12**</span> | **Edge** || 
+| <span style="color: lightgreen">**12***</span> | **Firefox** || 
+| <span style="color: lightgreen">**11**</span> | **IE** || 
+| <span style="color: lightgreen">**Yes**</span> | **Opera** || 
+| <span style="color: lightgreen">**6**</span> | **Safari** || 
+| <span style="color: lightgreen">**Yes**</span> | **Android Webview** | Mobile | 
+| <span style="color: lightgreen">**Yes**</span> | **Chrome for Android** || 
+| <span style="color: lightgreen">**14***</span> | **Firefox for Android** || 
+| <span style="color: lightgreen">**Yes**</span> | **Opera for Android** || 
+| <span style="color: lightgreen">**6**</span> | **Safari on iOS** || 
+| <span style="color: lightgreen">**Yes**</span> | **Samsung Internet** || 
+| <span style="color: lightgreen">**Yes**</span> | **Node.js** | Server | 
+
+<span style="color: lightgreen">Full Support</span>  
+<span style="color: grey">Compatibility Unknown</span>  
+<span style="color: red">No Support</span>
+
+  > *The non-standard `ArrayBuffer.slice()` method has been removed in Firefox 53 (but the standardized version `ArrayBuffer.prototype.slice() is kept).
 
 ---
 

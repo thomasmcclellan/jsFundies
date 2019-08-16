@@ -33,13 +33,25 @@ class MyArray extends Array {
 ---
 
 ## Browser Compatibility:
-<span style="color: lightgreen">**Full Support**:  
-  &nbsp; &nbsp; &nbsp; Firefox  
-  &nbsp; &nbsp; &nbsp; Firefox for Android  
-  &nbsp; &nbsp; &nbsp; Node.js  
-</span>
-<span style="color: lightblue">**Compatibility Unknown**: All others</span>  
-<span style="color: red">**No Support**: Edge</span>
+| `@@species` | Browser | Platform |
+|---|---|---|
+| <span style="color: grey">**?**</span> | **Chrome** | Desktop | 
+| <span style="color: red">**X**</span> | **Edge** || 
+| <span style="color: lightgreen">**48**</span> | **Firefox** || 
+| <span style="color: grey">**?**</span> | **IE** || 
+| <span style="color: grey">**?**</span> | **Opera** || 
+| <span style="color: grey">**?**</span> | **Safari** || 
+| <span style="color: grey">**?**</span> | **Android Webview** | Mobile | 
+| <span style="color: grey">**?**</span> | **Chrome for Android** || 
+| <span style="color: lightgreen">**48**</span> | **Firefox for Android** || 
+| <span style="color: grey">**?**</span> | **Opera for Android** || 
+| <span style="color: grey">**?**</span> | **Safari on iOS** || 
+| <span style="color: grey">**?**</span> | **Samsung Internet** || 
+| <span style="color: lightgreen">**6.5.0**</span> | **Node.js** | Server | 
+
+<span style="color: lightgreen">Full Support</span>  
+<span style="color: grey">Compatibility Unknown</span>  
+<span style="color: red">No Support</span>
 
 ---
 

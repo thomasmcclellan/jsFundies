@@ -42,9 +42,27 @@ The `find` method executes the `callback` function once for each index of the ar
 ---
 
 ## Browser Compatibility:
-<span style="color: lightgreen">**Full Support**: All others</span>  
-**Compatibility Unknown**: NA  
-<span style="color: red">**No Support**: IE</span>
+| `find()` | Browser | Platform |
+|---|---|---|
+| <span style="color: lightgreen">**45**</span> | **Chrome** | Desktop | 
+| <span style="color: lightgreen">**12**</span> | **Edge** || 
+| <span style="color: lightgreen">**25**</span> | **Firefox** || 
+| <span style="color: red">**X**</span> | **IE** || 
+| <span style="color: lightgreen">**32**</span> | **Opera** || 
+| <span style="color: lightgreen">**8**</span> | **Safari** || 
+| <span style="color: lightgreen">**Yes**</span> | **Android Webview** | Mobile | 
+| <span style="color: lightgreen">**Yes**</span> | **Chrome for Android** || 
+| <span style="color: lightgreen">**4**</span> | **Firefox for Android** || 
+| <span style="color: lightgreen">**Yes**</span> | **Opera for Android** || 
+| <span style="color: lightgreen">**8**</span> | **Safari on iOS** || 
+| <span style="color: lightgreen">**Yes**</span> | **Samsung Internet** || 
+| <span style="color: lightgreen">**4.0.0***</span> | **Node.js** | Server | 
+
+<span style="color: lightgreen">Full Support</span>  
+<span style="color: grey">Compatibility Unknown</span>  
+<span style="color: red">No Support</span>
+
+  > *From version 0.12: this feature is behind the `--harmony` runtime flag.
 
 ---
 

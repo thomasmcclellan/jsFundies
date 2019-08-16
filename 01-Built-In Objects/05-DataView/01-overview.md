@@ -182,9 +182,25 @@ All `DataView` instances inherit from `DataView.prototype` and allows the additi
 ---
 
 ## Browser Compatibility:
-<span style="color: lightgreen">**Full Support**: All</span>  
-**Compatibility Unknown**: NA  
-**No Support**: NA
+| `DataView` | Browser | Platform |
+|---|---|---|
+| <span style="color: lightgreen">**9**</span> | **Chrome** | Desktop | 
+| <span style="color: lightgreen">**12**</span> | **Edge** || 
+| <span style="color: lightgreen">**15**</span> | **Firefox** || 
+| <span style="color: lightgreen">**10**</span> | **IE** || 
+| <span style="color: lightgreen">**12.1**</span> | **Opera** || 
+| <span style="color: lightgreen">**5.1**</span> | **Safari** || 
+| <span style="color: lightgreen">**4**</span> | **Android Webview** | Mobile | 
+| <span style="color: lightgreen">**Yes**</span> | **Chrome for Android** || 
+| <span style="color: lightgreen">**15**</span> | **Firefox for Android** || 
+| <span style="color: lightgreen">**12.1**</span> | **Opera for Android** || 
+| <span style="color: lightgreen">**4.2**</span> | **Safari on iOS** || 
+| <span style="color: lightgreen">**Yes**</span> | **Samsung Internet** || 
+| <span style="color: lightgreen">**Yes**</span> | **Node.js** | Server | 
+
+<span style="color: lightgreen">Full Support</span>  
+<span style="color: grey">Compatibility Unknown</span>  
+<span style="color: red">No Support</span>
 
 ---
 

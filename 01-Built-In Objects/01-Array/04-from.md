@@ -51,9 +51,25 @@ In ES6, the class syntax allows for sub-classing of both built-in and user defin
 ---
 
 ## Browser Compatibility:
-<span style="color: lightgreen">**Full Support**: All others</span>  
-**Compatibility Unknown**: NA  
-<span style="color: red">**No Support**: IE</span>
+| `from()` | Browser | Platform |
+|---|---|---|
+| <span style="color: lightgreen">**45**</span> | **Chrome** | Desktop | 
+| <span style="color: lightgreen">**12**</span> | **Edge** || 
+| <span style="color: lightgreen">**32**</span> | **Firefox** || 
+| <span style="color: red">**X**</span> | **IE** || 
+| <span style="color: lightgreen">**Yes**</span> | **Opera** || 
+| <span style="color: lightgreen">**9**</span> | **Safari** || 
+| <span style="color: lightgreen">**45**</span> | **Android Webview** | Mobile | 
+| <span style="color: lightgreen">**Yes**</span> | **Chrome for Android** || 
+| <span style="color: lightgreen">**32**</span> | **Firefox for Android** || 
+| <span style="color: lightgreen">**Yes**</span> | **Opera for Android** || 
+| <span style="color: lightgreen">**Yes**</span> | **Safari on iOS** || 
+| <span style="color: lightgreen">**Yes**</span> | **Samsung Internet** || 
+| <span style="color: lightgreen">**4.0.0**</span> | **Node.js** | Server | 
+
+<span style="color: lightgreen">Full Support</span>  
+<span style="color: grey">Compatibility Unknown</span>  
+<span style="color: red">No Support</span>
 
 ---
 

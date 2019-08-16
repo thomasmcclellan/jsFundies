@@ -42,14 +42,25 @@ A new array with each element being the result of the callback function and flat
 ---
 
 ## Browser Compatibility:
-<span style="color: lightgreen">**Full Support**: All others</span><br>
-<span style="color: lightblue">**Compatibility Unknown**: NA</span><br>
-<span style="color: red">**No Support**:  
-  &nbsp; &nbsp; &nbsp; Edge  
-  &nbsp; &nbsp; &nbsp; IE  
-  &nbsp; &nbsp; &nbsp; Edge Mobile  
-  &nbsp; &nbsp; &nbsp; Samsung Internet
-</span>
+| `flatMap()` | Browser | Platform |
+|---|---|---|
+| <span style="color: lightgreen">**69**</span> | **Chrome** | Desktop | 
+| <span style="color: red">**X**</span> | **Edge** || 
+| <span style="color: lightgreen">**62**</span> | **Firefox** || 
+| <span style="color: red">**X**</span> | **IE** || 
+| <span style="color: lightgreen">**56**</span> | **Opera** || 
+| <span style="color: lightgreen">**12**</span> | **Safari** || 
+| <span style="color: lightgreen">**69**</span> | **Android Webview** | Mobile | 
+| <span style="color: lightgreen">**69**</span> | **Chrome for Android** || 
+| <span style="color: lightgreen">**62**</span> | **Firefox for Android** || 
+| <span style="color: lightgreen">**48**</span> | **Opera for Android** || 
+| <span style="color: lightgreen">**12**</span> | **Safari on iOS** || 
+| <span style="color: red">**X**</span> | **Samsung Internet** || 
+| <span style="color: lightgreen">**11.0.0**</span> | **Node.js** | Server | 
+
+<span style="color: lightgreen">Full Support</span>  
+<span style="color: grey">Compatibility Unknown</span>  
+<span style="color: red">No Support</span>
 
   ---
 

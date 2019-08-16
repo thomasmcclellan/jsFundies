@@ -34,9 +34,27 @@ A boolean which is `true` if the value of `valueToFind` is found within the arra
 ---
 
 ## Browser Compatibility:
-<span style="color: lightgreen">**Full Support**: All others</span>  
-**Compatibility Unknown**: NA  
-<span style="color: red">**No Support**: IE</span>
+| `includes()` | Browser | Platform |
+|---|---|---|
+| <span style="color: lightgreen">**47**</span> | **Chrome** | Desktop | 
+| <span style="color: lightgreen">**14**</span> | **Edge** || 
+| <span style="color: lightgreen">**43**</span> | **Firefox** || 
+| <span style="color: red">**X**</span> | **IE** || 
+| <span style="color: lightgreen">**34**</span> | **Opera** || 
+| <span style="color: lightgreen">**9**</span> | **Safari** || 
+| <span style="color: lightgreen">**Yes**</span> | **Android Webview** | Mobile | 
+| <span style="color: lightgreen">**Yes**</span> | **Chrome for Android** || 
+| <span style="color: lightgreen">**43**</span> | **Firefox for Android** || 
+| <span style="color: lightgreen">**34**</span> | **Opera for Android** || 
+| <span style="color: lightgreen">**9**</span> | **Safari on iOS** || 
+| <span style="color: lightgreen">**Yes**</span> | **Samsung Internet** || 
+| <span style="color: lightgreen">**6.0.0***</span> | **Node.js** | Server | 
+
+<span style="color: lightgreen">Full Support</span>  
+<span style="color: grey">Compatibility Unknown</span>  
+<span style="color: red">No Support</span>
+
+  > *From version 6.0.0: this feature is behind the `--harmony` runtime flag.
 
 ---
 

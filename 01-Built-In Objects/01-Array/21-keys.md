@@ -41,9 +41,25 @@ console.log(denseKeys) // [0, 1, 2]
 ---
 
 ## Browser Compatibility:
-<span style="color: lightgreen">**Full Support**: All others</span>  
-**Compatibility Unknown**: NA  
-<span style="color: red">**No Support**: IE</span>
+| `keys()` | Browser | Platform |
+|---|---|---|
+| <span style="color: lightgreen">**38**</span> | **Chrome** | Desktop | 
+| <span style="color: lightgreen">**12**</span> | **Edge** || 
+| <span style="color: lightgreen">**28**</span> | **Firefox** || 
+| <span style="color: red">**X**</span> | **IE** || 
+| <span style="color: lightgreen">**25**</span> | **Opera** || 
+| <span style="color: lightgreen">**8**</span> | **Safari** || 
+| <span style="color: lightgreen">**Yes**</span> | **Android Webview** | Mobile | 
+| <span style="color: lightgreen">**Yes**</span> | **Chrome for Android** || 
+| <span style="color: lightgreen">**28**</span> | **Firefox for Android** || 
+| <span style="color: lightgreen">**Yes**</span> | **Opera for Android** || 
+| <span style="color: lightgreen">**8**</span> | **Safari on iOS** || 
+| <span style="color: lightgreen">**Yes**</span> | **Samsung Internet** || 
+| <span style="color: lightgreen">**0.12**</span> | **Node.js** | Server | 
+
+<span style="color: lightgreen">Full Support</span>  
+<span style="color: grey">Compatibility Unknown</span>  
+<span style="color: red">No Support</span>
 
 ---
 

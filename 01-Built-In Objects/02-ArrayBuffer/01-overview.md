@@ -59,9 +59,25 @@ You cannot directly manipulate the contents of an `ArrayBuffer`; instead, you cr
 ---
 
 ## Browser Compatibility:
-<span style="color: lightgreen">**Full Support**: All</span>  
-**Compatibility Unknown**: NA  
-**No Support**: NA
+| `ArrayBuffer` | `ArrayBuffer()` without `new` throws | Browser | Platform |
+|---|---|---|---|
+| <span style="color: lightgreen">**7**</span> | <span style="color: lightgreen">**Yes**</span> | **Chrome** | Desktop | 
+| <span style="color: lightgreen">**12**</span> | <span style="color: lightgreen">**14**</span> | **Edge** || 
+| <span style="color: lightgreen">**4**</span> | <span style="color: lightgreen">**44**</span> | **Firefox** || 
+| <span style="color: lightgreen">**10**</span> | <span style="color: red">**X**</span> | **IE** || 
+| <span style="color: lightgreen">**11.6**</span> | <span style="color: lightgreen">**Yes**</span> | **Opera** || 
+| <span style="color: lightgreen">**5.1**</span> | <span style="color: grey">**?**</span> | **Safari** || 
+| <span style="color: lightgreen">**4**</span> | <span style="color: lightgreen">**Yes**</span> | **Android Webview** | Mobile | 
+| <span style="color: lightgreen">**Yes**</span> | <span style="color: lightgreen">**Yes**</span> | **Chrome for Android** || 
+| <span style="color: lightgreen">**4**</span> | <span style="color: lightgreen">**44**</span> | **Firefox for Android** || 
+| <span style="color: lightgreen">**12**</span> | <span style="color: grey">**?**</span> | **Opera for Android** || 
+| <span style="color: lightgreen">**4.2**</span> | <span style="color: grey">**?**</span> | **Safari on iOS** || 
+| <span style="color: lightgreen">**Yes**</span> | <span style="color: lightgreen">**Yes**</span> | **Samsung Internet** || 
+| <span style="color: lightgreen">**Yes**</span> | <span style="color: lightgreen">**0.12**</span> | **Node.js** | Server | 
+
+<span style="color: lightgreen">Full Support</span>  
+<span style="color: grey">Compatibility Unknown</span>  
+<span style="color: red">No Support</span>
 
 ---
 

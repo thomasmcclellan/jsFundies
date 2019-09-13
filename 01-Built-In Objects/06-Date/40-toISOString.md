@@ -1,34 +1,32 @@
-##### MM/DD/YYYY
-# ``
+##### 9/11/2019
+# `Date.prototype.toISOString()`
 
 ```js
+const event = new Date('11 September 2019 09:00 UTC')
 
+console.log(event.toString()) // Wed Sep 11 2019 05:00:00 GMT-0400 (Eastern Daylight Time)
+console.log(event.toISOString()) // 2019-09-11T09:00:00.000Z
 ```
 
 ---
 
 ## Syntax:
-``
-
-* ****: 
+`dateObj.toISOString()`
 
 ## Return value:
-
-
-## Errors Thrown:
-<span style="color: red">**RangeError**</span>: 
+A `string` representing the given date in the [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format according to universal time.
 
 ---
 
 ## Description:
-
+The `toISOString()` method returns a string in _simplified_ extended `ISO format` ([ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)), which is always 24 or 27 characters long (`YYY-MM-DDTHH:mm:ss.sssZ` or `±YYYYYY-MM-DDTHH:mm:ss.sssZ`, respectively).  The timezone is always zero UTC offset, as denoted by the suffix 'Z'.
 
 ---
 
 ## Specifications
 | Specification | Year | Status | Comment |
 |---|---|---|---|
-| ECMAScript 1st Edition | 1997 | Standard | Initial definition |
+| ECMAScript 1st Edition | 1997 | Standard | Initial definition. Implemented in JS 1.8 |
 | ECMAScript 3rd Edition | 1999 | Standard |  |
 | ECMAScript 5.1 | 2011 | Standard |  |
 | ECMAScript 2015 (6th Edition) | 2015 | Standard |  |
@@ -38,7 +36,7 @@
 ---
 
 ## Browser Compatibility:
-| `` | Browser | Platform |
+| `toISOString()` | Browser | Platform |
 |---|---|---|
 | <span style="color: lightgreen">**Yes**</span> | **Chrome** | Desktop | 
 | <span style="color: lightgreen">**12**</span> | **Edge** || 

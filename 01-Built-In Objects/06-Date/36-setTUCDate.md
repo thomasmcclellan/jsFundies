@@ -1,34 +1,40 @@
-##### MM/DD/YYYY
-# ``
+##### 9/05/2019
+# `Date.prototype.setUTCDate()`
 
 ```js
+const event = new Date('September 5, 2019 09:00:00 GMT-4:00')
 
+console.log(event.toUTCString()) // Thu, 05 Sep 2019 13:00:00 GMT
+console.log(event.getUTCDate()) // 5
+
+event.setUTCDate(19)
+
+console.log(event.toUTCString()) // Thu, 19 Sep 2019 13:00:00 GMT
 ```
 
 ---
 
 ## Syntax:
-``
+`dateObj.setUTCDate(dayValue)`
 
-* ****: 
+* **dayValue**: `number` (specifically and int) between 1 and 31, representing the day of the month 
 
 ## Return value:
-
-
-## Errors Thrown:
-<span style="color: red">**RangeError**</span>: 
+A `number` representing the number of milliseconds between January 1 1970, 00:00:00 UTC and the updated date.
 
 ---
 
 ## Description:
+The `setUTCHours()` method sets the day of the month for a specified date according to universal time.
 
+  > If a parameter you specify is outside of the expected range, `setUTCDate()` attempts to update the date information in the `Date` object accordingly. For example, if you use 40 for dayValue, and the month stored in the `Date` object is June, the day will be changed to 10 and the month will be incremented to July.
 
 ---
 
 ## Specifications
 | Specification | Year | Status | Comment |
 |---|---|---|---|
-| ECMAScript 1st Edition | 1997 | Standard | Initial definition |
+| ECMAScript 1st Edition | 1997 | Standard | Initial definition. Implemented in JS 1.3 |
 | ECMAScript 3rd Edition | 1999 | Standard |  |
 | ECMAScript 5.1 | 2011 | Standard |  |
 | ECMAScript 2015 (6th Edition) | 2015 | Standard |  |
@@ -38,7 +44,7 @@
 ---
 
 ## Browser Compatibility:
-| `` | Browser | Platform |
+| `setUTCDate()` | Browser | Platform |
 |---|---|---|
 | <span style="color: lightgreen">**Yes**</span> | **Chrome** | Desktop | 
 | <span style="color: lightgreen">**12**</span> | **Edge** || 

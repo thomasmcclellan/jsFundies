@@ -1,34 +1,45 @@
-##### MM/DD/YYYY
-# ``
+##### 9/03/2019
+# `Date.prototype.setUTCMinutes()`
 
 ```js
+const date1 = new Date('September 3, 2019, 09:00:00')
 
+console.log(date1.getUTCMinutes()) // 0
+
+date1.setUTCMinutes(25)
+
+console.log(date1.getUTCMinutes()) // 25
 ```
 
 ---
 
 ## Syntax:
-``
+`dateObj.setUTCMinutes(minutesValue[, secondsValue[, msValue]])`
 
-* ****: 
+* **minutesValue**: a `number` (specifically an int) between 0 and 59, representing minutes 
+* **secondsValue** (Optional): a `number` (specifically an int) between 0 and 59, representing seconds *
+* **msValue**: a `number` (specifically an int) between 0 and 999, representing milliseconds *
+
+  > *If you specify the value in question, you must also specify the previous ones (i.e. to specify `msValue`, you must specify `minutesValue` and `secondsValue`).
 
 ## Return value:
-
-
-## Errors Thrown:
-<span style="color: red">**RangeError**</span>: 
+A `number` representing the number of milliseconds between January 1, 1975 00:00:00 UTC and the updated date.
 
 ---
 
 ## Description:
+The `setUTCMinutes()` method sets the minutes for a specified date according to universal time.
 
+  > If you do not specify the `secondsValue` and `msValue` parameters, the values returned from `getUTCSeconds()` and `getUTCMilliseconds()` methods are used.
+
+  > If a parameter you specify is outside of the expected range, `setUTCMinutes()` attempts to update the date information in the `Date` object accordingly.  For example, if you use 100 for `secondsValue`, the minutes will be incremented by 1 and 40 will be used for seconds.
 
 ---
 
 ## Specifications
 | Specification | Year | Status | Comment |
 |---|---|---|---|
-| ECMAScript 1st Edition | 1997 | Standard | Initial definition |
+| ECMAScript 1st Edition | 1997 | Standard | Initial definition. Implemented in JS 1.3 |
 | ECMAScript 3rd Edition | 1999 | Standard |  |
 | ECMAScript 5.1 | 2011 | Standard |  |
 | ECMAScript 2015 (6th Edition) | 2015 | Standard |  |
@@ -38,7 +49,7 @@
 ---
 
 ## Browser Compatibility:
-| `` | Browser | Platform |
+| `setUTCMinutes()` | Browser | Platform |
 |---|---|---|
 | <span style="color: lightgreen">**Yes**</span> | **Chrome** | Desktop | 
 | <span style="color: lightgreen">**12**</span> | **Edge** || 

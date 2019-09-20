@@ -1,34 +1,35 @@
-##### MM/DD/YYYY
-# ``
+##### 9/20/2019
+# `Date.prototype.toJSON()`
 
 ```js
+const event = new Date('Sep 20, 2019, 09:00:00 UTC')
+const jsonDate = event.toJSON()
 
+console.log(jsonDate) // 2019-09-20T09:00:00.000Z
+console.log(new Date(jsonDate).toUTCString()) // Fri, 20 Sep 2019 09:00:00 GMT
 ```
 
 ---
 
 ## Syntax:
-``
-
-* ****: 
+`dateObj.toJSON()`
 
 ## Return value:
-
-
-## Errors Thrown:
-<span style="color: red">**RangeError**</span>: 
+A `string` representation of the given date.
 
 ---
 
 ## Description:
+The `toJSON()` method returns a `string` representing the `Date` object.
 
+`Date` instances refer to a specific point in time.  Calling `toJSON()` returns a `string` (using `toISOString()`) representing the `Date` object's value.  This method is generally intended to, by default, usefully serialize `Date` objects during JSON serialization.
 
 ---
 
 ## Specifications
 | Specification | Year | Status | Comment |
 |---|---|---|---|
-| ECMAScript 1st Edition | 1997 | Standard | Initial definition |
+| ECMAScript 1st Edition | 1997 | Standard | Initial definition. Implemented in JS 1.8.5 |
 | ECMAScript 3rd Edition | 1999 | Standard |  |
 | ECMAScript 5.1 | 2011 | Standard |  |
 | ECMAScript 2015 (6th Edition) | 2015 | Standard |  |
@@ -38,7 +39,7 @@
 ---
 
 ## Browser Compatibility:
-| `` | Browser | Platform |
+| `toJSON()` | Browser | Platform |
 |---|---|---|
 | <span style="color: lightgreen">**Yes**</span> | **Chrome** | Desktop | 
 | <span style="color: lightgreen">**12**</span> | **Edge** || 

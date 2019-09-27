@@ -1,41 +1,38 @@
-##### 9/26/2019
-# `Error.prototype`
-## Description:
-The `Error.prototype` property represents the prototype for the `Error` constructor.
+##### 9/27/2019
+# `Error.prototype.toString()`
+## Syntax:
+`err.toString()`
 
-| Property attributes of `Error.prototype` ||
-|---|---|
-| Writable | no |
-| Enumerable | no |
-| Configurable | no |
-
-  > All `Error` instances and instances of non-generic errors inherit from `Error.prototype`.  As with all constructor functions, you can use the prototype of the constructor to add properties or methods to all instances with that constructor.
+## Return value:
+A `string` representing the specified `Error` object.
 
 ---
 
-## Properties:
-**`Error.prototype`**
-  > Allows the addition of properties to `Error` instances.
+## Description:
+The `toString()` method returns a `string` representing the specified `Error` object.
 
-## Methods: 
-  > The global `Error` object contains no methods of its own, however, it does inherit some methods from the prototype chain.
+The `Error` object overrides the `Object.prototype.toString()` method inherited by all objects.  Its semantics are as follows (assuming `Object` and `String` have their original values):
 
-## Error Instances:
-All `Error` instances and instances of non-generic errors inherit from `Error.prototype`. As all constructor functions, you can use the prototype of the constructor to add properties or methods to all instances created with that constructor.
+```js
+Error.prototype.toString = () => {
+  'use strict'
 
-### Properties:
-**`Error.prototype.constructor`**
-  > Specifies the function that created an instance's prototype
+  const obj = Object(this)
+  const name = this.name
+  const msg = this.message
 
-**`Error.prototype.message`**
-  > Error message.
+  if (obj !== this)
+    throw new TypeError()
+  
+  if (name === '')
+    return msg
+  
+  if (msg === '')
+    return name
 
-**`Error.prototype.name`**
-  > Error name.
-
-### Methods:
-**`Error.prototype.toString()`**
-  > Returns a `string` representing the specified object.  Overrides the `Object.prototype.toString()` method.
+  return `${name}: ${msg}`
+}
+```
 
 ---
 
@@ -52,7 +49,7 @@ All `Error` instances and instances of non-generic errors inherit from `Error.pr
 ---
 
 ## Browser Compatibility:
-| `prototype` | Browser | Platform |
+| `toString()` | Browser | Platform |
 |---|---|---|
 | <span style="color: lightgreen">**Yes**</span> | **Chrome** | Desktop | 
 | <span style="color: lightgreen">**12**</span> | **Edge** || 
@@ -74,4 +71,4 @@ All `Error` instances and instances of non-generic errors inherit from `Error.pr
 
 ---
 
-[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error/prototype)
+[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error/toString)

@@ -1,5 +1,5 @@
 ##### 9/23/2019
-# Error
+# Error Overview
 ## Syntax:
 `new Error([message[, fileName[, lineNumber]]])`
 

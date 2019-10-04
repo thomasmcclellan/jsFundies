@@ -171,4 +171,4 @@ The `Float32Array` typed array represent an `array` of `32-bit` floating point n
 
 ---
 
-[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView)
+[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array)

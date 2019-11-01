@@ -1,5 +1,5 @@
 ##### 10/15/2019
-# Generator Overview
+# `Generator` Overview
 
 ## Syntax:
 ```js

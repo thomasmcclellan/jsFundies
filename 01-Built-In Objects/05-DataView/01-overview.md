@@ -1,5 +1,5 @@
 ##### 7/01/2019
-# DataView Overview
+# `DataView` Overview
 
 ```js
 // Create an ArrayBuffer with a size in bytes

@@ -1,5 +1,5 @@
 ##### 10/03/2019
-# Function Overview
+# `Function` Overview
 
 ```js
 const sum = new Function('a', 'b', 'return a + b')

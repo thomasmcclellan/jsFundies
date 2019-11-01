@@ -1,5 +1,5 @@
 ##### 6/19/2019
-# Atomics Overview
+# `Atomics` Overview
 
 ## Description
 The `Atomics` object provides atomic operations as static methods.  They are used with `SharedArrayBuffer` objects.

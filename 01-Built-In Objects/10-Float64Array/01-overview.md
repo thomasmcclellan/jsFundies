@@ -1,5 +1,5 @@
 ##### 10/02/2019
-# Float64Array Overview
+# `Float64Array` Overview
 ## Syntax:
 ### New in `ES2017`:
 `new Float64Array()`

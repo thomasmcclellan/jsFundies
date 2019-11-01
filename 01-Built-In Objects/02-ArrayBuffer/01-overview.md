@@ -1,5 +1,5 @@
 ##### 6/12/2019
-# ArrayBuffer Overview
+# `ArrayBuffer` Overview
 
 ```js
 const buffer = new ArrayBuffer(8)

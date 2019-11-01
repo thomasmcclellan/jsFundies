@@ -1,5 +1,5 @@
 ##### 9/30/2019
-# EvalError Overview
+# `EvalError` Overview
 ## Syntax:
 `new EvalError([message[, `<span style="color: red">fileName</span>`[, `<span style="color: red">lineNumber</span>`]]])`
 

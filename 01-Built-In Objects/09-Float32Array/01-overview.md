@@ -1,5 +1,5 @@
 ##### 10/01/2019
-# Float32Array Overview
+# `Float32Array` Overview
 ## Syntax:
 ### New in `ES2017`:
 `new Float32Array()`

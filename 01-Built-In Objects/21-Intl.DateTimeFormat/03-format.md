@@ -1,26 +1,36 @@
-##### 11/06/2019
-# `Intl.Collator.prototype`
+##### 11/14/2019
+# `Intl.DateTimeFormat.prototype.format()`
+
+```js
+const options1 = {
+  weekday: 'long',
+  year: 'numeric', 
+  month: 'long',
+  day: 'numeric'
+}
+const date1 = new Date(2019, 10)
+const dateTimeFormat1 = new Intl.DateTimeFormat('sr-RS', options1)
+const dateTimeFormat2 = new Intl.DateTimeFormat('en-GB', options1)
+const dateTimeFormat3 = new Intl.DateTimeFormat('en-US', options1)
+
+console.log(dateTimeFormat1.format(date1))
+console.log(dateTimeFormat1.format(date1))
+console.log(dateTimeFormat1.format(date1))
+```
+
+---
+
+## Syntax:
+`dateTimeFormat.format(date)`
+
+* **date**: date to format.
+
+---
+
 ## Description:
-The `Intl.Collator.prototype` property represents the prototype `object` for the `Intl.Collator` constructor.
+The `Intl.DateTimeFormat.prototype.format()` method formats a date according to the locale and formatting options of this `Intl.DateTimeFormat` `object`.
 
-| Property attributes of `Intl.Collator.prototype` ||
-|---|---|
-| Writable | no |
-| Enumerable | no |
-| Configurable | no |
-
-`Intl.Collator` instances inherit from `Intl.Collator.prototype`.  Modifications to the prototype `object` are inherited by all `Intl.Collator` instances.
-
-### Properties:
-`Intl.Collator.prototype.constructor`
-  > A reference to `Intl.Collator`.
-
-### Methods:
-`Intl.Collator.prototype.compare`
-  > Getter `function` that compares two `strings` according to the sort order of this `Intl.Collator` object.
-
-`Intl.Collator.prototype.resolvedOptions()`
-  > Returns a new `object` with properties reflecting the locale and collation options computed during initialization of the `object`.
+The format getter formats a date into a `string` according to the locale and formatting options of this `Intl.DateTimeFormat` `object`.
 
 ---
 
@@ -34,10 +44,10 @@ The `Intl.Collator.prototype` property represents the prototype `object` for the
 ---
 
 ## Browser Compatibility:
-| `prototype` | Browser | Platform |
+| `format()` | Browser | Platform |
 |---|---|---|
 | <span style="color: lightgreen">**24**</span> | **Chrome** | Desktop | 
-| <span style="color: lightgreen">**Yes**</span> | **Edge** || 
+| <span style="color: lightgreen">**12**</span> | **Edge** || 
 | <span style="color: lightgreen">**29**</span> | **Firefox** || 
 | <span style="color: lightgreen">**11**</span> | **IE** || 
 | <span style="color: lightgreen">**15**</span> | **Opera** || 
@@ -56,4 +66,4 @@ The `Intl.Collator.prototype` property represents the prototype `object` for the
 
 ---
 
-[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Collator/prototype)
+[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat/format)

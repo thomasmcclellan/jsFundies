@@ -1,30 +1,31 @@
-##### 12/02/2019
-# `Intl.NumberFormat.prototype.format()`
+##### 12/05/2019
+# `Intl.NumberFormat.supportedLocalesOf()`
 
 ```js
-const amount = 654321.987
-const options1 = { style: 'currency', currency: 'RUB' }
-const options2 = { style: 'currency', currency: 'USD' }
-const numberFormat1 = new Intl.NumberFormat('ru-RU', options1)
-const numberFormat2 = new Intl.NumberFormat('en-US', options2)
+const locales1 = ['ban', 'id-u-co-pinyin', 'de-ID']
+const options1 = { localeMatcher: 'lookup' }
 
-console.log(numberFormat1.format(amount)) // 654 321,99 ₽
-console.log(numberFormat2.format(amount)) // $654,321.99
+console.log(Intl.NumberFormat.supportedLocalesOf(locales1, options1)) // ['id-u-co-pinyin', 'de-ID']
 ```
 
 ---
 
 ## Syntax:
-`numberFormat.format(number)`
+`Intl.NumberFormat.supportedLocalesOf(locales [, options])`
 
-* **number**: `number` (or BigInt) to format
+* **locales**: `string` with a `BCP 47` language tag, or an `array` of such `strings`
+* **options** (Optional): `object` that may have the following property:
+  * **localeMatcher**: locale matching algorithm to use.  Possible values are `'lookup'` and `'best fit'`; the default being the latter. 
+
+## Return value:
+An `array` of `strings` representing a subset of the given locale tags that are supported in number formatting without having to fall back to the runtime's default locale.
 
 ---
 
 ## Description:
-The `Intl.NumberFormat.prototype.format()` method formats a number according to the locale and formatting options of this `NumberFormat` `object`.
+The `Intl.NumberFormat.supportedLocalesOf()` method returns an `array` containing those of the provided locales that are supported in `number` formatting without having to fall back to the runtime's default locale.
 
-the `format()` getter `function` formats a `number` into a `string` according to the locale and formatting options of this `NumberFormat` `object`.
+Returns an `array` with a subset of the language tags provided in `locales`.  The language tags returned are those for which the runtime supports a locale in `number` formatting that the locale matching algorithm used considers a match, so that it wouldn't have to fall back to the default locale.
 
 ---
 
@@ -38,7 +39,7 @@ the `format()` getter `function` formats a `number` into a `string` according to
 ---
 
 ## Browser Compatibility:
-| `` | Browser | Platform |
+| `supportedLocalesOf()` | Browser | Platform |
 |---|---|---|
 | <span style="color: lightgreen">**24**</span> | **Chrome** | Desktop | 
 | <span style="color: lightgreen">**12**</span> | **Edge** || 
@@ -60,4 +61,4 @@ the `format()` getter `function` formats a `number` into a `string` according to
 
 ---
 
-[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NumberFormat/format)
+[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NumberFormat/supportedLocalesOf)

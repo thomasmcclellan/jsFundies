@@ -1,11 +1,5 @@
 ##### 12/06/2019
 # `Intl.PluralRules` Overview
-
-```js
-```
-
----
-
 ## Syntax:
 `new Intl.PluralRules([locales [, options]])`
 

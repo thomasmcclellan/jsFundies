@@ -1,26 +1,19 @@
-##### 12/09/2019
-# `Intl.PluralRules.prototype`
-## Description:
-The `Intl.PluralRules.prototype` property represents the prototype `object` for the `Intl.PluralRules` constructor.
+##### 12/10/2019
+# `Intl.PluralRules.select()`
+## Syntax:
+`pluralRule.select(number)`
 
-| Property attributes of `Intl.PluralRules.prototype` ||
-|---|---|
-| Writable | no |
-| Enumerable | no |
-| Configurable | no |
+* **number**: `number` to get a plural rule for 
+
+## Return value:
+A `string` representing the pluralization category of the `number`.  Can be one of `'zero'`, `'one'`, `'two'`, `'few'`, `'many'`, or `'other'`.
 
 ---
 
-## Properties:
-**`Intl.PluralRules.prototype.constructor`**
-  > A reference to `Intl.PluralRules`.
+## Description:
+The `Intl.PluralRules.select()` method returns a `string` indicating which plural rule to use for locale-aware formatting.
 
-## Methods: 
-**`Intl.PluralRules.prototype.resolvedOptions()`**
-  > Returns a enw `object` with properties reflecting the locale and collation options computed during initialization of the `object`.
-
-**`Intl.PluralRules.prototype.select()`**
-  > Returns a `string` indicating which plural rule to use for locale-aware formatting.
+This `function` selects a pluralization category according to the locale and formatting options of a `PluralRules` `object`.
 
 ---
 
@@ -28,10 +21,11 @@ The `Intl.PluralRules.prototype` property represents the prototype `object` for 
 | Specification | Year | Status | Comment |
 |---|---|---|---|
 | ECMAScript Internationalization API 4.0 (`ECMA-402`) | 2019 | Draft | Initial definition |
+
 ---
 
 ## Browser Compatibility:
-| `prototype` | Browser | Platform |
+| `select()` | Browser | Platform |
 |---|---|---|
 | <span style="color: lightgreen">**63**</span> | **Chrome** | Desktop | 
 | <span style="color: lightgreen">**18**</span> | **Edge** || 
@@ -53,4 +47,4 @@ The `Intl.PluralRules.prototype` property represents the prototype `object` for 
 
 ---
 
-[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/PluralRules/prototype)
+[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/PluralRules/select)

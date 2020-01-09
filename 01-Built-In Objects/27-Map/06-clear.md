@@ -1,21 +1,27 @@
-##### 1/02/2020
-# `Map.prototype.size`
+##### 1/07/2020
+# `Map.prototype.clear()`
 
 ```js
 const map1 = new Map()
-map1.set('a', 'alpha')
-map1.set('b', 'beta')
-map1.set('g', 'gamma')
+map1.set('bar', 'baz')
+map1.set(1, 'foo')
 
-console.log(map1.size) // 3
+console.log(map1.size) // 2
+
+map1.clear()
+
+console.log(map1.size) // 0
 ```
 
 ---
 
-## Description:
-The `Map.prototype.size` accessor property returns the number of elements in a `Map` object.
+## Syntax:
+`myMap.clear()`
 
-The value of `size` is an integer representing how many entries the `Map` object has.  A set accessor `function` for `size` is `undefined`; you cannot change this property.
+---
+
+## Description:
+The `Map.prototype.clear()` method removes all elements from a `Map` object.
 
 ---
 
@@ -29,7 +35,7 @@ The value of `size` is an integer representing how many entries the `Map` object
 ---
 
 ## Browser Compatibility:
-| `size` | Browser | Platform |
+| `clear()` | Browser | Platform |
 |---|---|---|
 | <span style="color: lightgreen">**38**</span> | **Chrome** | Desktop | 
 | <span style="color: lightgreen">**12**</span> | **Edge** || 
@@ -51,4 +57,4 @@ The value of `size` is an integer representing how many entries the `Map` object
 
 ---
 
-[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/size)
+[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/clear)

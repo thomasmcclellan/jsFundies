@@ -1,21 +1,28 @@
-##### 1/02/2020
-# `Map.prototype.size`
+##### 1/09/2020
+# `Map.prototype.entries()`
 
 ```js
-const map1 = new Map()
-map1.set('a', 'alpha')
-map1.set('b', 'beta')
-map1.set('g', 'gamma')
+const map1 = new Map(),
+      iterator1 = map1.entries()
+map1.set('0', 'foo')
+map1.set('1', 'bar')
 
-console.log(map1.size) // 3
+console.log(iterator1.next().value) // ['0', 'foo']
+console.log(iterator1.next().value) // ['1', 'bar']
 ```
 
 ---
 
-## Description:
-The `Map.prototype.size` accessor property returns the number of elements in a `Map` object.
+## Syntax:
+`myMap.entries()`
 
-The value of `size` is an integer representing how many entries the `Map` object has.  A set accessor `function` for `size` is `undefined`; you cannot change this property.
+## Return value:
+A new `Map` iterator object.
+
+---
+
+## Description:
+The `Map.prototype.entries()` method returns a new `Iterator` object that contains the `[key, value]` pairs for each element in the `Map` object in insertion order.
 
 ---
 
@@ -29,17 +36,17 @@ The value of `size` is an integer representing how many entries the `Map` object
 ---
 
 ## Browser Compatibility:
-| `size` | Browser | Platform |
+| `entries()` | Browser | Platform |
 |---|---|---|
 | <span style="color: lightgreen">**38**</span> | **Chrome** | Desktop | 
 | <span style="color: lightgreen">**12**</span> | **Edge** || 
-| <span style="color: lightgreen">**19**</span> | **Firefox** || 
-| <span style="color: lightgreen">**11**</span> | **IE** || 
+| <span style="color: lightgreen">**20**</span> | **Firefox** || 
+| <span style="color: lightgreen">**X**</span> | **IE** || 
 | <span style="color: lightgreen">**25**</span> | **Opera** || 
 | <span style="color: lightgreen">**8**</span> | **Safari** || 
 | <span style="color: lightgreen">**38**</span> | **Android Webview** | Mobile | 
 | <span style="color: lightgreen">**38**</span> | **Chrome for Android** || 
-| <span style="color: lightgreen">**19**</span> | **Firefox for Android** || 
+| <span style="color: lightgreen">**20**</span> | **Firefox for Android** || 
 | <span style="color: lightgreen">**25**</span> | **Opera for Android** || 
 | <span style="color: lightgreen">**8**</span> | **Safari on iOS** || 
 | <span style="color: lightgreen">**3.0**</span> | **Samsung Internet** || 
@@ -51,4 +58,4 @@ The value of `size` is an integer representing how many entries the `Map` object
 
 ---
 
-[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/size)
+[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/entries)

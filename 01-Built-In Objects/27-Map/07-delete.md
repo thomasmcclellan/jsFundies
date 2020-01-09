@@ -1,21 +1,28 @@
-##### 1/02/2020
-# `Map.prototype.size`
+##### 1/08/2020
+# `Map.prototype.delete()`
 
 ```js
 const map1 = new Map()
-map1.set('a', 'alpha')
-map1.set('b', 'beta')
-map1.set('g', 'gamma')
+map1.set('bar', 'foo')
 
-console.log(map1.size) // 3
+console.log(map1.delete('bar')) // true
+console.log(map1.has('bar')) // false
 ```
 
 ---
 
-## Description:
-The `Map.prototype.size` accessor property returns the number of elements in a `Map` object.
+## Syntax:
+`myMap.delete(key)`
 
-The value of `size` is an integer representing how many entries the `Map` object has.  A set accessor `function` for `size` is `undefined`; you cannot change this property.
+* **key**: key of the element to remove from the `Map` object 
+
+## Return value:
+A `boolean`:  `true` if an element in the `Map` object existing and has been removed, or `false` if the element does not exist.
+
+---
+
+## Description:
+The `Map.prototype.delete()` method removes the specified element from a `Map` object by key.
 
 ---
 
@@ -29,17 +36,17 @@ The value of `size` is an integer representing how many entries the `Map` object
 ---
 
 ## Browser Compatibility:
-| `size` | Browser | Platform |
+| `delete()` | Browser | Platform |
 |---|---|---|
 | <span style="color: lightgreen">**38**</span> | **Chrome** | Desktop | 
 | <span style="color: lightgreen">**12**</span> | **Edge** || 
-| <span style="color: lightgreen">**19**</span> | **Firefox** || 
+| <span style="color: lightgreen">**13**</span> | **Firefox** || 
 | <span style="color: lightgreen">**11**</span> | **IE** || 
 | <span style="color: lightgreen">**25**</span> | **Opera** || 
 | <span style="color: lightgreen">**8**</span> | **Safari** || 
 | <span style="color: lightgreen">**38**</span> | **Android Webview** | Mobile | 
 | <span style="color: lightgreen">**38**</span> | **Chrome for Android** || 
-| <span style="color: lightgreen">**19**</span> | **Firefox for Android** || 
+| <span style="color: lightgreen">**14**</span> | **Firefox for Android** || 
 | <span style="color: lightgreen">**25**</span> | **Opera for Android** || 
 | <span style="color: lightgreen">**8**</span> | **Safari on iOS** || 
 | <span style="color: lightgreen">**3.0**</span> | **Samsung Internet** || 
@@ -51,4 +58,4 @@ The value of `size` is an integer representing how many entries the `Map` object
 
 ---
 
-[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/size)
+[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/delete)

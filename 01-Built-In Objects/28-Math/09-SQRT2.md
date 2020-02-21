@@ -1,43 +1,28 @@
-##### 2/04/2020
-# `Math.E`
+##### 2/13/2020
+# `Math.SQRT2`
 
 ```js
-function compoundOneYear(interestRate, currentVal) {
-  return currentVal * (Math.E ** interestRate);
+function getRoot2() {
+  return Math.SQRT2;
 }
 
-console.log(Math.E); // 2.718281828459045
-console.log((1 + (1 / 1000000)) ** 1000000); // 2.7182804690957534
-console.log(compoundOneYear(0.05, 100)); // 105.12710963760242
+console.log(getRoot2()); // 1.4142135623730951
 ```
 
 ---
 
-## Syntax:
-``
-
-* **** (Optional): 
-
-## Return value:
-
-
-## Errors Thrown:
-<span style="color: red">**RangeError**</span>: 
-
----
-
 ## Description:
-The `Math.E` property represents the base of natural logarithms, `e`, approximately 2.718.
+The `Math.SQRT2` property represents the square root of 2, approximately 1.414:
 
-  > `\mathtt{\mi{Math.E}} = e \approx 2.718`
+  > `\mathtt{\mi{Math.SQRT2}} = \sqrt{2} \approx 1.414`
 
-| Property Attribute of `Math.E` ||
+| Property attributes of `Math.SQRT2` ||
 |---|---|
 | Writable | no |
 | Enumerable | no |
 | Configurable | no |
 
-  > Because `E` is a static property of `Math`, you always use it as `Math.E`, rather than as a property of a `Math` object you created (`Math` is not a constructor).
+  > Because `SQRT2` is a static property of `Math`, you always use it as `Math.SQRT2`, rather than as a property of a `Math` object (`Math` is not a constructor).
 
 ---
 
@@ -54,7 +39,7 @@ The `Math.E` property represents the base of natural logarithms, `e`, approximat
 ---
 
 ## Browser Compatibility:
-| `E` | Browser | Platform |
+| `SQRT2` | Browser | Platform |
 |---|---|---|
 | <span style="color: lightgreen">**1**</span> | **Chrome** | Desktop | 
 | <span style="color: lightgreen">**12**</span> | **Edge** || 
@@ -76,4 +61,4 @@ The `Math.E` property represents the base of natural logarithms, `e`, approximat
 
 ---
 
-[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/E)
+[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/SQRT2)

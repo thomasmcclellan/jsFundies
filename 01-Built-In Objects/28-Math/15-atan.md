@@ -1,43 +1,36 @@
-##### 2/04/2020
-# `Math.E`
+##### 2/21/2020
+# `Math.atan()`
 
 ```js
-function compoundOneYear(interestRate, currentVal) {
-  return currentVal * (Math.E ** interestRate);
+// Calculates angle of a right-angle triangle in radians
+function calcAngle(opposite, adjacent) {
+  return Math.atan(opposite / adjacent);
 }
 
-console.log(Math.E); // 2.718281828459045
-console.log((1 + (1 / 1000000)) ** 1000000); // 2.7182804690957534
-console.log(compoundOneYear(0.05, 100)); // 105.12710963760242
+console.log(calcAngle(8, 10)); // 0.6747409422235527
+console.log(calcAngle(5, 3)); // 1.0303768265243125
 ```
 
 ---
 
 ## Syntax:
-``
+`Math.atan(x)`
 
-* **** (Optional): 
+* **x**: a number 
 
 ## Return value:
-
-
-## Errors Thrown:
-<span style="color: red">**RangeError**</span>: 
+The arctangent (in radians) of the given number.
 
 ---
 
 ## Description:
-The `Math.E` property represents the base of natural logarithms, `e`, approximately 2.718.
+The `Math.atan()` method returns the arctangent (in radians) of a number, that is:
 
-  > `\mathtt{\mi{Math.E}} = e \approx 2.718`
+  > `\mathtt{\operatorname{Math.atan}(x)} = \arctan(x) = \text{ the unique } \; y \in \left[-\frac{\pi}{2}; \frac{\pi}{2}\right] \, \text{such that} \; \tan(y) = x`
 
-| Property Attribute of `Math.E` ||
-|---|---|
-| Writable | no |
-| Enumerable | no |
-| Configurable | no |
+The `Math.atan()` method returns a numeric value between `-\frac{\pi}{2}` and `\frac{\pi}{2}` radians.
 
-  > Because `E` is a static property of `Math`, you always use it as `Math.E`, rather than as a property of a `Math` object you created (`Math` is not a constructor).
+  > Because `atan()` is a static method of `Math`, you always use it as `Math.atan()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
 
 ---
 
@@ -54,7 +47,7 @@ The `Math.E` property represents the base of natural logarithms, `e`, approximat
 ---
 
 ## Browser Compatibility:
-| `E` | Browser | Platform |
+| `atan()` | Browser | Platform |
 |---|---|---|
 | <span style="color: lightgreen">**1**</span> | **Chrome** | Desktop | 
 | <span style="color: lightgreen">**12**</span> | **Edge** || 
@@ -76,4 +69,4 @@ The `Math.E` property represents the base of natural logarithms, `e`, approximat
 
 ---
 
-[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/E)
+[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/atan)

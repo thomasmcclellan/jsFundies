@@ -1,43 +1,34 @@
-##### 2/04/2020
-# `Math.E`
+##### 2/14/2020
+# `Math.abs()`
 
 ```js
-function compoundOneYear(interestRate, currentVal) {
-  return currentVal * (Math.E ** interestRate);
+function difference(a, b) {
+  return Math.abs(a - b);
 }
 
-console.log(Math.E); // 2.718281828459045
-console.log((1 + (1 / 1000000)) ** 1000000); // 2.7182804690957534
-console.log(compoundOneYear(0.05, 100)); // 105.12710963760242
+console.log(difference(3, 5)); // 2
+console.log(difference(5, 3)) // 2
+console.log(difference(1.23456, 7.89012)); // 6.6555599999999995
 ```
 
 ---
 
 ## Syntax:
-``
+`Math.abs(x)`
 
-* **** (Optional): 
+* **x**: a number 
 
 ## Return value:
-
-
-## Errors Thrown:
-<span style="color: red">**RangeError**</span>: 
+The absolute value of the given number.
 
 ---
 
 ## Description:
-The `Math.E` property represents the base of natural logarithms, `e`, approximately 2.718.
+The `Math.abs()` method returns the absolute value of a number, that is:
 
-  > `\mathtt{\mi{Math.E}} = e \approx 2.718`
+  > `{\mathtt{\operatorname{Math.abs}(z)}} = {|z|} = \begin{cases} x & \text{if} \quad x \geq 0 \\ x & \text{if} |quad x < 0 \end{cases}`
 
-| Property Attribute of `Math.E` ||
-|---|---|
-| Writable | no |
-| Enumerable | no |
-| Configurable | no |
-
-  > Because `E` is a static property of `Math`, you always use it as `Math.E`, rather than as a property of a `Math` object you created (`Math` is not a constructor).
+  > Because `abs()` is a static method of `Math`, you always use it as `Math.abs()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
 
 ---
 
@@ -54,7 +45,7 @@ The `Math.E` property represents the base of natural logarithms, `e`, approximat
 ---
 
 ## Browser Compatibility:
-| `E` | Browser | Platform |
+| `` | Browser | Platform |
 |---|---|---|
 | <span style="color: lightgreen">**1**</span> | **Chrome** | Desktop | 
 | <span style="color: lightgreen">**12**</span> | **Edge** || 
@@ -76,4 +67,4 @@ The `Math.E` property represents the base of natural logarithms, `e`, approximat
 
 ---
 
-[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/E)
+[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs)

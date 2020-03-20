@@ -1,27 +1,31 @@
-##### MM/DD/YYYY
-# ``
+##### 3/05/2020
+# `Math.floor()`
 
 ```js
-
+console.log(Math.floor(5.95)); // 5
+console.log(Math.floor(5.05)); // 5
+console.log(Math.floor(5)); // 5
+console.log(Math.floor(-5.05)); // -6
 ```
 
 ---
 
 ## Syntax:
-``
+`Math.floor(x)`
 
-* **** (Optional): 
+* **x**: a number
 
 ## Return value:
-
-
-## Errors Thrown:
-<span style="color: red">**RangeError**</span>: 
+A number representing the largest integer less than or equal to the specified number.
 
 ---
 
 ## Description:
+The `Math.floor()` method returns the largest integer less than or equal to a given number.
 
+  > Because `floor()` is a static method of `Math`, you always use it as `Math.floor()`, rather than as a method of a `Math` object you created, (`Math` is not a constructor).
+
+  > **NOTE**: `Math.floor(null)` returns 0, not a `NaN`.
 
 ---
 
@@ -38,20 +42,20 @@
 ---
 
 ## Browser Compatibility:
-| `` | Browser | Platform |
+| `floor()` | Browser | Platform |
 |---|---|---|
-| <span style="color: lightgreen">**Yes**</span> | **Chrome** | Desktop | 
+| <span style="color: lightgreen">**1**</span> | **Chrome** | Desktop | 
 | <span style="color: lightgreen">**12**</span> | **Edge** || 
 | <span style="color: lightgreen">**1**</span> | **Firefox** || 
-| <span style="color: lightgreen">**Yes**</span> | **IE** || 
-| <span style="color: lightgreen">**Yes**</span> | **Opera** || 
-| <span style="color: lightgreen">**Yes**</span> | **Safari** || 
-| <span style="color: lightgreen">**Yes**</span> | **Android Webview** | Mobile | 
-| <span style="color: lightgreen">**Yes**</span> | **Chrome for Android** || 
+| <span style="color: lightgreen">**3**</span> | **IE** || 
+| <span style="color: lightgreen">**3**</span> | **Opera** || 
+| <span style="color: lightgreen">**1**</span> | **Safari** || 
+| <span style="color: lightgreen">**1**</span> | **Android Webview** | Mobile | 
+| <span style="color: lightgreen">**18**</span> | **Chrome for Android** || 
 | <span style="color: lightgreen">**4**</span> | **Firefox for Android** || 
-| <span style="color: lightgreen">**Yes**</span> | **Opera for Android** || 
-| <span style="color: lightgreen">**Yes**</span> | **Safari on iOS** || 
-| <span style="color: lightgreen">**Yes**</span> | **Samsung Internet** || 
+| <span style="color: lightgreen">**10.1**</span> | **Opera for Android** || 
+| <span style="color: lightgreen">**1**</span> | **Safari on iOS** || 
+| <span style="color: lightgreen">**1.0**</span> | **Samsung Internet** || 
 | <span style="color: lightgreen">**Yes**</span> | **Node.js** | Server | 
 
 <span style="color: lightgreen">Full Support</span>  
@@ -60,4 +64,4 @@
 
 ---
 
-[MDN Docs]()
+[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor)

@@ -1,27 +1,31 @@
-##### MM/DD/YYYY
-# ``
+##### 2/27/2020
+# `Math.ceil()`
 
 ```js
-
+console.log(Math.ceil(0.95)); // 1
+console.log(Math.ceil(4)); // 4
+console.log(Math.ceil(7.004)); // 8
+console.log(Math.ceil(-7.004)); // -7
 ```
 
 ---
 
 ## Syntax:
-``
+`Math.ceil(x)`
 
-* **** (Optional): 
+* **x**: a number 
 
 ## Return value:
-
-
-## Errors Thrown:
-<span style="color: red">**RangeError**</span>: 
+The smallest integer greater than or equal to the given number.
 
 ---
 
 ## Description:
+The `Math.ceil()` method always rounds a number up to the next largest whole number or integer.
 
+  > **NOTE**: `Math.ceil(null)` returns integer 0 and does not give a `NaN` error.
+
+  > Because `ceil()` is a static method of `Math`, you always use it as `Math.ceil()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
 
 ---
 
@@ -38,20 +42,20 @@
 ---
 
 ## Browser Compatibility:
-| `` | Browser | Platform |
+| `ceil()` | Browser | Platform |
 |---|---|---|
-| <span style="color: lightgreen">**Yes**</span> | **Chrome** | Desktop | 
+| <span style="color: lightgreen">**1**</span> | **Chrome** | Desktop | 
 | <span style="color: lightgreen">**12**</span> | **Edge** || 
 | <span style="color: lightgreen">**1**</span> | **Firefox** || 
-| <span style="color: lightgreen">**Yes**</span> | **IE** || 
+| <span style="color: lightgreen">**3**</span> | **IE** || 
 | <span style="color: lightgreen">**Yes**</span> | **Opera** || 
-| <span style="color: lightgreen">**Yes**</span> | **Safari** || 
-| <span style="color: lightgreen">**Yes**</span> | **Android Webview** | Mobile | 
-| <span style="color: lightgreen">**Yes**</span> | **Chrome for Android** || 
+| <span style="color: lightgreen">**1**</span> | **Safari** || 
+| <span style="color: lightgreen">**1**</span> | **Android Webview** | Mobile | 
+| <span style="color: lightgreen">**18**</span> | **Chrome for Android** || 
 | <span style="color: lightgreen">**4**</span> | **Firefox for Android** || 
 | <span style="color: lightgreen">**Yes**</span> | **Opera for Android** || 
-| <span style="color: lightgreen">**Yes**</span> | **Safari on iOS** || 
-| <span style="color: lightgreen">**Yes**</span> | **Samsung Internet** || 
+| <span style="color: lightgreen">**1**</span> | **Safari on iOS** || 
+| <span style="color: lightgreen">**1.0**</span> | **Samsung Internet** || 
 | <span style="color: lightgreen">**Yes**</span> | **Node.js** | Server | 
 
 <span style="color: lightgreen">Full Support</span>  
@@ -60,4 +64,4 @@
 
 ---
 
-[MDN Docs]()
+[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil)

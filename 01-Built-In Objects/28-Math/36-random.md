@@ -1,27 +1,30 @@
-##### MM/DD/YYYY
-# ``
+##### 3/23/2020
+# `Math.random()`
 
 ```js
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
 
+console.log(getRandomInt(3)); // 1
+console.log(getRandomInt(1)); // 0
+console.log(Math.random()); // 0.5308213179912737 (randomly chosen)
 ```
 
 ---
 
 ## Syntax:
-``
-
-* **** (Optional): 
+`Math.random()`
 
 ## Return value:
-
-
-## Errors Thrown:
-<span style="color: red">**RangeError**</span>: 
+A floating-point, pseudo-random number between 0 (inclusive) and 1 (exclusive).
 
 ---
 
 ## Description:
+The `Math.random()` method returns a floating-point, pseudo-random number in the range 0 to less than 1 (inclusive of 0, but not 1) with approximately uniform distribution over that range--which you can then scale to your desired range.  The implementation selects the initial seed to the random number generation algorithm; it cannot be chose or reset by the user.
 
+  > `Math.random()` _does not_ provide cryptographically secure random numbers.  Do not use them for anything related to security.  Use the **Web Crypto API** instead, and more precisely, the `window.crypto.getRandomValues()` method.
 
 ---
 
@@ -38,20 +41,20 @@
 ---
 
 ## Browser Compatibility:
-| `` | Browser | Platform |
+| `random()` | Browser | Platform |
 |---|---|---|
-| <span style="color: lightgreen">**Yes**</span> | **Chrome** | Desktop | 
+| <span style="color: lightgreen">**1**</span> | **Chrome** | Desktop | 
 | <span style="color: lightgreen">**12**</span> | **Edge** || 
 | <span style="color: lightgreen">**1**</span> | **Firefox** || 
-| <span style="color: lightgreen">**Yes**</span> | **IE** || 
-| <span style="color: lightgreen">**Yes**</span> | **Opera** || 
-| <span style="color: lightgreen">**Yes**</span> | **Safari** || 
-| <span style="color: lightgreen">**Yes**</span> | **Android Webview** | Mobile | 
-| <span style="color: lightgreen">**Yes**</span> | **Chrome for Android** || 
+| <span style="color: lightgreen">**3**</span> | **IE** || 
+| <span style="color: lightgreen">**3**</span> | **Opera** || 
+| <span style="color: lightgreen">**1**</span> | **Safari** || 
+| <span style="color: lightgreen">**1**</span> | **Android Webview** | Mobile | 
+| <span style="color: lightgreen">**18**</span> | **Chrome for Android** || 
 | <span style="color: lightgreen">**4**</span> | **Firefox for Android** || 
-| <span style="color: lightgreen">**Yes**</span> | **Opera for Android** || 
-| <span style="color: lightgreen">**Yes**</span> | **Safari on iOS** || 
-| <span style="color: lightgreen">**Yes**</span> | **Samsung Internet** || 
+| <span style="color: lightgreen">**10.1**</span> | **Opera for Android** || 
+| <span style="color: lightgreen">**1**</span> | **Safari on iOS** || 
+| <span style="color: lightgreen">**1.0**</span> | **Samsung Internet** || 
 | <span style="color: lightgreen">**Yes**</span> | **Node.js** | Server | 
 
 <span style="color: lightgreen">Full Support</span>  
@@ -60,4 +63,4 @@
 
 ---
 
-[MDN Docs]()
+[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)

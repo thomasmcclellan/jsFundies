@@ -1,27 +1,33 @@
-##### 4/07/2020
-# `Number.EPSILON`
+##### 4/20/2020
+# `Number.isInteger()`
 
 ```js
-const result = Math.abs(0.2 - 0.3 + 0.1);
+function fits(x, y) {
+  if (Number.isInteger(y / x)) return 'Fits!';
 
-console.log(result); // 2.7755575615628914e-17
-console.log(result < Number.EPSILON); // true
+  return 'Does NOT fit.';
+}
+
+console.log(fits(5, 10)); // Fits!
+console.log(fits(5, 11)); // Does NOT fit.
 ```
 
 ---
 
+## Syntax:
+`Number.isInteger(value)`
+
+* **value**: the value to be tested for being an integer
+
+## Return value:
+A `boolean` indicating whether or not the given value is an integer.
+
+---
+
 ## Description:
-The `Number.EPSILON` property represents the difference between 1 and the smallest floating point number greater than 1.
+The `Number.isInteger()` method determines whether the passed value is an integer.
 
-You do not have to create a `Number` object to access this static property (use `Number.EPSILON`).
-
-| Property Attributes of `Number.EPSILON` ||
-|---|---|
-| Writable | no |
-| Enumerable | no |
-| Configurable | no |
-
-  > The `EPSILON` property has a value of approximately `2.2204460492503130808472633361816E-16` or `2**-52`.
+If the target value is an integer, return `true`; otherwise, return `false`.  If the value is `NaN` or `Infinity`, return `false`.  The method will also return `true` for floating point numbers that can be represented as integer.
 
 ---
 
@@ -33,17 +39,17 @@ You do not have to create a `Number` object to access this static property (use 
 ---
 
 ## Browser Compatibility:
-| `EPSILON` | Browser | Platform |
+| `isInteger()` | Browser | Platform |
 |---|---|---|
 | <span style="color: lightgreen">**34**</span> | **Chrome** | Desktop | 
 | <span style="color: lightgreen">**12**</span> | **Edge** || 
-| <span style="color: lightgreen">**25**</span> | **Firefox** || 
+| <span style="color: lightgreen">**16**</span> | **Firefox** || 
 | <span style="color: red">**X**</span> | **IE** || 
 | <span style="color: lightgreen">**21**</span> | **Opera** || 
 | <span style="color: lightgreen">**9**</span> | **Safari** || 
 | <span style="color: lightgreen">**≤37**</span> | **Android Webview** | Mobile | 
 | <span style="color: lightgreen">**34**</span> | **Chrome for Android** || 
-| <span style="color: lightgreen">**25**</span> | **Firefox for Android** || 
+| <span style="color: lightgreen">**16**</span> | **Firefox for Android** || 
 | <span style="color: lightgreen">**21**</span> | **Opera for Android** || 
 | <span style="color: lightgreen">**9**</span> | **Safari on iOS** || 
 | <span style="color: lightgreen">**2.0**</span> | **Samsung Internet** || 
@@ -55,4 +61,4 @@ You do not have to create a `Number` object to access this static property (use 
 
 ---
 
-[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/EPSILON)
+[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger)

@@ -1,58 +1,55 @@
-##### MM/DD/YYYY
-# ``
+##### 4/01/2020
+# `Math.tanh()`
 
 ```js
-
+console.log(Math.tanh(-1)); // -0.7615941559557649
+console.log(Math.tanh(0)); // 0
+console.log(Math.tanh(Infinity)); // 1
+console.log(Math.tanh(1)); // 0.7615941559557649
 ```
 
 ---
 
 ## Syntax:
-``
+`Math.tanh(x)`
 
-* **** (Optional): 
+* **x**: a number
 
 ## Return value:
-
-
-## Errors Thrown:
-<span style="color: red">**RangeError**</span>: 
+The hyperbolic tangent of the given number.
 
 ---
 
 ## Description:
+The `Math.tanh()` method return the hyperbolic tangent of a number.
 
+  > Because `tanh()` is a static method of `Math`, you always use it as `Math.tanh()`, rather than as a method of a `Math` object you created (`Math` is not a constructor).
 
 ---
 
 ## Specifications
 | Specification | Year | Status | Comment |
 |---|---|---|---|
-| ECMAScript 1st Edition | 1997 | Standard | Initial definition |
-| ECMAScript 3rd Edition | 1999 | Standard |  |
-| ECMAScript 5.1 | 2011 | Standard |  |
-| ECMAScript 2015 (6th Edition) | 2015 | Standard |  |
-| ECMAScript 2016 | 2016 | Standard |  |
-| ECMAScript Latest Draft | 2019 | Draft |  |
+| ECMAScript Latest Draft | 2019 | Draft | Initial definition |
 
 ---
 
 ## Browser Compatibility:
-| `` | Browser | Platform |
+| `tanh()` | Browser | Platform |
 |---|---|---|
-| <span style="color: lightgreen">**Yes**</span> | **Chrome** | Desktop | 
+| <span style="color: lightgreen">**38**</span> | **Chrome** | Desktop | 
 | <span style="color: lightgreen">**12**</span> | **Edge** || 
-| <span style="color: lightgreen">**1**</span> | **Firefox** || 
-| <span style="color: lightgreen">**Yes**</span> | **IE** || 
-| <span style="color: lightgreen">**Yes**</span> | **Opera** || 
-| <span style="color: lightgreen">**Yes**</span> | **Safari** || 
-| <span style="color: lightgreen">**Yes**</span> | **Android Webview** | Mobile | 
-| <span style="color: lightgreen">**Yes**</span> | **Chrome for Android** || 
-| <span style="color: lightgreen">**4**</span> | **Firefox for Android** || 
-| <span style="color: lightgreen">**Yes**</span> | **Opera for Android** || 
-| <span style="color: lightgreen">**Yes**</span> | **Safari on iOS** || 
-| <span style="color: lightgreen">**Yes**</span> | **Samsung Internet** || 
-| <span style="color: lightgreen">**Yes**</span> | **Node.js** | Server | 
+| <span style="color: lightgreen">**25**</span> | **Firefox** || 
+| <span style="color: red">**X**</span> | **IE** || 
+| <span style="color: lightgreen">**25**</span> | **Opera** || 
+| <span style="color: lightgreen">**8**</span> | **Safari** || 
+| <span style="color: lightgreen">**38**</span> | **Android Webview** | Mobile | 
+| <span style="color: lightgreen">**38**</span> | **Chrome for Android** || 
+| <span style="color: lightgreen">**25**</span> | **Firefox for Android** || 
+| <span style="color: lightgreen">**25**</span> | **Opera for Android** || 
+| <span style="color: lightgreen">**8**</span> | **Safari on iOS** || 
+| <span style="color: lightgreen">**3.0**</span> | **Samsung Internet** || 
+| <span style="color: lightgreen">**0.12**</span> | **Node.js** | Server | 
 
 <span style="color: lightgreen">Full Support</span>  
 <span style="color: grey">Compatibility Unknown</span>  
@@ -60,4 +57,4 @@
 
 ---
 
-[MDN Docs]()
+[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/tanh)

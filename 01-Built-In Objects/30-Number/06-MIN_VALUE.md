@@ -1,33 +1,34 @@
-##### 4/03/2020
-# `NaN` Overview
+##### 4/13/2020
+# `Number.MIN_VALUE`
 
 ```js
-function sanitize(x) {
-  if (isNaN(x))
-    return NaN;
-
-  return x;
+function multiply(x, y) {
+  if (x * y < Number.MIN_VALUE) {
+    return 'Process as -Infinity';
+  }
+  return (x * y);
 }
 
-console.log(sanitize('1')); // 1
-console.log(sanitize('NotANumber')); // NaN
+console.log(multiply(5e-324, 1)); // 5e-324
+console.log(multiply(-1.7976931348623157e+308, 2)); // Process as -Infinity
 ```
 
 ---
 
 ## Description:
-The global `NaN` property is a value representing _Not-A-Number_.
+The `Number.MIN_VALUE` property represents the smallest positive numeric value representable in `JS`.
 
-| Property Attributes of `NaN` ||
+| Property Attributes of `MIN_VALUE` ||
 |---|---|
 | Writable | no |
 | Enumerable | no |
 | Configurable | no |
 
-`NaN` is a property of the _global `object`_.
+The `MIN_VALUE` property is the number closest to 0, not the most negative number, that `JS` can represent.
 
-The initial value fo `NaN` is Not-A-Number--the same as the value of `Number.NaN`.  In modern browsers, `NaN` is non-configurable, non-writable property.  Even when this is not the case, avoid overriding it.
-It is rather rare to use `NaN` in a program.  It is the returned value when `Math` `functions` fail (`Math.sqrt(-1)`) or when a `function` trying to parse a number fails (`parseInt('blah')`).
+`MIN_VALUE` has a value of approximately `5e-324`. Values smaller than `MIN_VALUE` ("underflow values") are converted to 0.
+
+  > Because `MIN_VALUE` is a static property of `Number`, you always use it as `Number.MIN_VALUE`, rather than as a property of a `Number` object you created.
 
 ---
 
@@ -44,13 +45,13 @@ It is rather rare to use `NaN` in a program.  It is the returned value when `Mat
 ---
 
 ## Browser Compatibility:
-| `NaN` | Browser | Platform |
-|---|---|---|---|
+| `MIN_VALUE` | Browser | Platform |
+|---|---|---|
 | <span style="color: lightgreen">**1**</span> | **Chrome** | Desktop | 
 | <span style="color: lightgreen">**12**</span> | **Edge** || 
 | <span style="color: lightgreen">**1**</span> | **Firefox** || 
 | <span style="color: lightgreen">**4**</span> | **IE** || 
-| <span style="color: lightgreen">**4**</span> | **Opera** || 
+| <span style="color: lightgreen">**3**</span> | **Opera** || 
 | <span style="color: lightgreen">**1**</span> | **Safari** || 
 | <span style="color: lightgreen">**1**</span> | **Android Webview** | Mobile | 
 | <span style="color: lightgreen">**18**</span> | **Chrome for Android** || 
@@ -58,7 +59,7 @@ It is rather rare to use `NaN` in a program.  It is the returned value when `Mat
 | <span style="color: lightgreen">**10.1**</span> | **Opera for Android** || 
 | <span style="color: lightgreen">**1**</span> | **Safari on iOS** || 
 | <span style="color: lightgreen">**1.0**</span> | **Samsung Internet** || 
-| <span style="color: lightgreen">**Yes**</span> | **Node.js** | Server | 
+| <span style="color: lightgreen">**0.1.100**</span> | **Node.js** | Server | 
 
 <span style="color: lightgreen">Full Support</span>  
 <span style="color: grey">Compatibility Unknown</span>  
@@ -66,4 +67,4 @@ It is rather rare to use `NaN` in a program.  It is the returned value when `Mat
 
 ---
 
-[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN)
+[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MIN_VALUE)

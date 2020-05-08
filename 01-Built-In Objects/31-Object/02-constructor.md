@@ -1,29 +1,30 @@
-##### 5/04/2020
-# `Number.prototype.valueOf()`
+##### 5/06/2020
+# `Object.prototype.constructor`
+## Description:
+The `Object.prototype.constructor` property returns a reference to the `Object` constructor `function` that created the instance `object`. 
+
+  > **NOTE**: The value of this property is a reference to _the `function itself_, not a `string` containing the `function`'s name.
+
+The value is only read-only for primitive values such as `1`, `true`, and `'test'`.
+
+All `objects` (ith the exception of `objects` created with `Object.create(null)`) will have a `constructor` property.  `Objects` created without the explicit use of a constructor `function` (such as `object`-and `array`-literals) will have a `constructor` property that points to the Fundamental `Object` constructor type for that `object`.
 
 ```js
-const numObj = new Number(42),
-      num = numObj.valueOf();
+let o = {}
+o.constructor === Object // true
 
-console.log(typeof numObj); // object
-console.log(num); // 42
-console.log(typeof num); // number
+let o = new Object
+o.constructor === Object // true
+
+let a = []
+a.constructor === Array // true
+
+let a = new Array
+a.constructor === Array // true
+
+let n = new Number(3)
+n.constructor === Number // true
 ```
-
----
-
-## Syntax:
-`numObj.valueOf()`
-
-## Return value:
-A `number` representing the primitive value fo the specified `Number` object.
-
----
-
-## Description:
-The `Number.prototype.valueOf()` method returns the wrapped primitive value of a `Number` object.
-
-This method is usually called internally by `JS` and not explicitly in the web code.
 
 ---
 
@@ -40,7 +41,7 @@ This method is usually called internally by `JS` and not explicitly in the web c
 ---
 
 ## Browser Compatibility:
-| `valueOf()` | Browser | Platform |
+| `constructor` | Browser | Platform |
 |---|---|---|
 | <span style="color: lightgreen">**1**</span> | **Chrome** | Desktop | 
 | <span style="color: lightgreen">**12**</span> | **Edge** || 
@@ -54,7 +55,7 @@ This method is usually called internally by `JS` and not explicitly in the web c
 | <span style="color: lightgreen">**10.1**</span> | **Opera for Android** || 
 | <span style="color: lightgreen">**1**</span> | **Safari on iOS** || 
 | <span style="color: lightgreen">**1.0**</span> | **Samsung Internet** || 
-| <span style="color: lightgreen">**0.1.100**</span> | **Node.js** | Server | 
+| <span style="color: lightgreen">**Yes**</span> | **Node.js** | Server | 
 
 <span style="color: lightgreen">Full Support</span>  
 <span style="color: grey">Compatibility Unknown</span>  
@@ -62,4 +63,4 @@ This method is usually called internally by `JS` and not explicitly in the web c
 
 ---
 
-[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/valueOf)
+[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor)

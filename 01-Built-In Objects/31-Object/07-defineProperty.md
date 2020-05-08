@@ -12,24 +12,16 @@
 
 * **** (Optional): 
 
+## Return value:
+
+
+## Errors Thrown:
+<span style="color: red">**RangeError**</span>: 
+
 ---
 
 ## Description:
 
-
----
-
-## Properties:
-<SUMMARY>
-
-**`<PROPERTY>`**
-  > <DESCRIPTION>
-
-## Methods: 
-<SUMMARY>
-
-**`<METHOD>`**
-  > <DESCRIPTION>
 
 ---
 
@@ -47,11 +39,11 @@
 
 ## Browser Compatibility:
 | `` | Browser | Platform |
-|---|---|---|---|
+|---|---|---|
 | <span style="color: lightgreen">**Yes**</span> | **Chrome** | Desktop | 
 | <span style="color: lightgreen">**12**</span> | **Edge** || 
-| <span style="color: lightgreen">**1.5**</span> | **Firefox** || 
-| <span style="color: lightgreen">**9**</span> | **IE** || 
+| <span style="color: lightgreen">**1**</span> | **Firefox** || 
+| <span style="color: lightgreen">**Yes**</span> | **IE** || 
 | <span style="color: lightgreen">**Yes**</span> | **Opera** || 
 | <span style="color: lightgreen">**Yes**</span> | **Safari** || 
 | <span style="color: lightgreen">**Yes**</span> | **Android Webview** | Mobile | 

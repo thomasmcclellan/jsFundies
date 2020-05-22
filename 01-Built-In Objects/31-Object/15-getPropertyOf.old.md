@@ -1,25 +1,19 @@
-##### 5/15/2020
-# `Object.fromEntries()`
+##### MM/DD/YYYY
+# ``
 
 ```js
-const entries = new Map([
-  ['foo', 'bar'],
-  ['baz', 42]
-]),
-      obj = Object.fromEntries(entries);
 
-console.log(obj); // { foo: 'bar', baz: 42 }
 ```
 
 ---
 
 ## Syntax:
-`Object.fromEntries(iterable)`
+``
 
-* **iterable**: An iterable such as `Array` or `Map`, or other `objects` implementing the [iterable protocol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterable_protocol)
+* **** (Optional): 
 
 ## Return value:
-A new `object` whose properties are given by the entries of the iterable.
+
 
 ## Errors Thrown:
 <span style="color: red">**RangeError**</span>: 
@@ -27,7 +21,7 @@ A new `object` whose properties are given by the entries of the iterable.
 ---
 
 ## Description:
-The `Object.fromEntries()` method transforms a list of key-value pairs into an `object`.
+
 
 ---
 
@@ -66,4 +60,4 @@ The `Object.fromEntries()` method transforms a list of key-value pairs into an `
 
 ---
 
-[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries)
+[MDN Docs]()

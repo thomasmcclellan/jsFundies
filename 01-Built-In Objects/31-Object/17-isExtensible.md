@@ -1,27 +1,32 @@
-##### MM/DD/YYYY
-# ``
+##### 5/27/2020
+# `Object.isExtensible()`
 
 ```js
+const obj1 = {};
 
+console.log(Object.isExtensible(obj1)); // true
+
+Object.preventExtensions(obj1);
+
+console.log(Object.isExtensible(obj1)); // false
 ```
 
 ---
 
 ## Syntax:
-``
+`Object.isExtensible(obj)`
 
-* **** (Optional): 
+* **obj**: The `object` which should be checked
 
 ## Return value:
-
-
-## Errors Thrown:
-<span style="color: red">**RangeError**</span>: 
+A `boolean` indicating whether or not the given `object` is extensible.
 
 ---
 
 ## Description:
+The `Object.isExtensible()` method determines if an `object` is extensible (whether it can have new properties added to it).
 
+`Objects` are extensible by default: they can have new properties added to them, and (in engines that support `__proto__`), their `__proto__` property can be modified.  An `object` can be marked as non-extensible using `Object.preventExtensions()`, `Object.seal()`, or `Object.freeze()`.
 
 ---
 
@@ -38,20 +43,20 @@
 ---
 
 ## Browser Compatibility:
-| `` | Browser | Platform |
+| `isExtensible()` | Browser | Platform |
 |---|---|---|
-| <span style="color: lightgreen">**Yes**</span> | **Chrome** | Desktop | 
+| <span style="color: lightgreen">**6**</span> | **Chrome** | Desktop | 
 | <span style="color: lightgreen">**12**</span> | **Edge** || 
-| <span style="color: lightgreen">**1**</span> | **Firefox** || 
-| <span style="color: lightgreen">**Yes**</span> | **IE** || 
-| <span style="color: lightgreen">**Yes**</span> | **Opera** || 
-| <span style="color: lightgreen">**Yes**</span> | **Safari** || 
-| <span style="color: lightgreen">**Yes**</span> | **Android Webview** | Mobile | 
-| <span style="color: lightgreen">**Yes**</span> | **Chrome for Android** || 
+| <span style="color: lightgreen">**4**</span> | **Firefox** || 
+| <span style="color: lightgreen">**9**</span> | **IE** || 
+| <span style="color: lightgreen">**12**</span> | **Opera** || 
+| <span style="color: lightgreen">**5.1**</span> | **Safari** || 
+| <span style="color: lightgreen">**1**</span> | **Android Webview** | Mobile | 
+| <span style="color: lightgreen">**18**</span> | **Chrome for Android** || 
 | <span style="color: lightgreen">**4**</span> | **Firefox for Android** || 
-| <span style="color: lightgreen">**Yes**</span> | **Opera for Android** || 
-| <span style="color: lightgreen">**Yes**</span> | **Safari on iOS** || 
-| <span style="color: lightgreen">**Yes**</span> | **Samsung Internet** || 
+| <span style="color: lightgreen">**12**</span> | **Opera for Android** || 
+| <span style="color: lightgreen">**6**</span> | **Safari on iOS** || 
+| <span style="color: lightgreen">**1.0**</span> | **Samsung Internet** || 
 | <span style="color: lightgreen">**Yes**</span> | **Node.js** | Server | 
 
 <span style="color: lightgreen">Full Support</span>  
@@ -60,4 +65,4 @@
 
 ---
 
-[MDN Docs]()
+[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isExtensible)

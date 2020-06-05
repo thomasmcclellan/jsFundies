@@ -1,27 +1,32 @@
-##### MM/DD/YYYY
-# ``
+##### 6/01/2020
+# `Object.keys()`
 
 ```js
+const obj1 = {
+  a: 'something',
+  b: 42,
+  c: false
+};
 
+console.log(Object.keys(obj1)); // ['a', 'b', 'c']
 ```
 
 ---
 
 ## Syntax:
-``
+`Object.keys(obj)`
 
-* **** (Optional): 
+* **obj**: The `object` of which the enumerable's own properties are to be returned.
 
 ## Return value:
-
-
-## Errors Thrown:
-<span style="color: red">**RangeError**</span>: 
+An `array` of `strings` that represent all the enumerable properties of the given `object`.
 
 ---
 
 ## Description:
+The `Object.keys()` method returns an `array` of a given `object`'s own enumerable property **names**, iterated in the same order that a normal loop would.
 
+`Object.keys()` returns an `array` whose elements are `strings` corresponding to the enumerable properties found directly upon `object`.  The ordering of the properties is the same as that given by looping over the properties of the `object` manually.
 
 ---
 
@@ -38,20 +43,20 @@
 ---
 
 ## Browser Compatibility:
-| `` | Browser | Platform |
+| `keys()` | Browser | Platform |
 |---|---|---|
-| <span style="color: lightgreen">**Yes**</span> | **Chrome** | Desktop | 
+| <span style="color: lightgreen">**5**</span> | **Chrome** | Desktop | 
 | <span style="color: lightgreen">**12**</span> | **Edge** || 
-| <span style="color: lightgreen">**1**</span> | **Firefox** || 
-| <span style="color: lightgreen">**Yes**</span> | **IE** || 
-| <span style="color: lightgreen">**Yes**</span> | **Opera** || 
-| <span style="color: lightgreen">**Yes**</span> | **Safari** || 
-| <span style="color: lightgreen">**Yes**</span> | **Android Webview** | Mobile | 
-| <span style="color: lightgreen">**Yes**</span> | **Chrome for Android** || 
+| <span style="color: lightgreen">**4**</span> | **Firefox** || 
+| <span style="color: lightgreen">**9**</span> | **IE** || 
+| <span style="color: lightgreen">**12**</span> | **Opera** || 
+| <span style="color: lightgreen">**5**</span> | **Safari** || 
+| <span style="color: lightgreen">**1**</span> | **Android Webview** | Mobile | 
+| <span style="color: lightgreen">**18**</span> | **Chrome for Android** || 
 | <span style="color: lightgreen">**4**</span> | **Firefox for Android** || 
-| <span style="color: lightgreen">**Yes**</span> | **Opera for Android** || 
-| <span style="color: lightgreen">**Yes**</span> | **Safari on iOS** || 
-| <span style="color: lightgreen">**Yes**</span> | **Samsung Internet** || 
+| <span style="color: lightgreen">**12**</span> | **Opera for Android** || 
+| <span style="color: lightgreen">**5**</span> | **Safari on iOS** || 
+| <span style="color: lightgreen">**1.0**</span> | **Samsung Internet** || 
 | <span style="color: lightgreen">**Yes**</span> | **Node.js** | Server | 
 
 <span style="color: lightgreen">Full Support</span>  
@@ -60,4 +65,4 @@
 
 ---
 
-[MDN Docs]()
+[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)

@@ -1,30 +1,42 @@
-##### 6/08/2020
-# `Object.prototype.toLocaleString()`
+##### 6/09/2020
+# `Object.prototype.toString()`
 
 ```js
-const date1 = new Date(Date.UTC(2012, 11, 20, 3, 0 , 0)),
-      number1 = 123456.789;
+function Dog(name) {
+  this.name = name;
+}
 
-console.log(date1.toLocaleString('ar-EG')); // ٢٠‏/١٢‏/٢٠١٢ ٤:٠٠:٠٠ ص
-console.log(number1.toLocaleString('de-DE')); // 123.456,789
+const dog1 = new Dog('Aspen');
+
+Dog.prototype.toString = function dogToString() {
+  return `${this.name}`
+};
+
+console.log(dog1.toString()); // Aspen
 ```
 
 ---
 
 ## Syntax:
-`obj.toLocaleString()`
+`obj.toString()`
 
 ## Return value:
 A `string` representing the `object`.
 
+## Errors Thrown:
+<span style="color: red">**RangeError**</span>: 
+
 ---
 
 ## Description:
-The `Object.prototype.toLocaleString()` method returns a `string` representing the `object`. This method is meant to be overridden by derived `objects` for locale-specific purposes.
+The `Object.prototype.toString()` method returns a `string` representing the `object`.
 
-`Object`'s `toLocaleString` returns the result of calling `toString()`.
+Every `object` has a `toString()` method that is automatically called when the `object` is to be represented as a text value or when an `object` is referred to in a manner in which a `string` is expected. By default, the `toString()` method is inherited by every `object` descended from `Object`. If this method is not overridden in a custom `object`, `toString()` returns `"[object type]"`, where type is the `object` type. The following code illustrates this:
 
-This `function` is provided to give `objects` a generic `toLocaleString` method, even though not all may use it.  
+```js
+const o = new Object();
+o.toString(); // [object Object]
+```
 
 ---
 
@@ -41,13 +53,13 @@ This `function` is provided to give `objects` a generic `toLocaleString` method,
 ---
 
 ## Browser Compatibility:
-| `toLocaleString()` | Browser | Platform |
+| `toString()` | Browser | Platform |
 |---|---|---|
 | <span style="color: lightgreen">**1**</span> | **Chrome** | Desktop | 
 | <span style="color: lightgreen">**12**</span> | **Edge** || 
 | <span style="color: lightgreen">**1**</span> | **Firefox** || 
-| <span style="color: lightgreen">**5.5**</span> | **IE** || 
-| <span style="color: lightgreen">**4**</span> | **Opera** || 
+| <span style="color: lightgreen">**3**</span> | **IE** || 
+| <span style="color: lightgreen">**3**</span> | **Opera** || 
 | <span style="color: lightgreen">**1**</span> | **Safari** || 
 | <span style="color: lightgreen">**1**</span> | **Android Webview** | Mobile | 
 | <span style="color: lightgreen">**18**</span> | **Chrome for Android** || 
@@ -63,4 +75,4 @@ This `function` is provided to give `objects` a generic `toLocaleString` method,
 
 ---
 
-[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toLocaleString)
+[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString)

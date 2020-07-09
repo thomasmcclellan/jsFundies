@@ -1,30 +1,38 @@
-##### 6/08/2020
-# `Object.prototype.toLocaleString()`
+##### 6/10/2020
+# `Object.prototype.valueOf()`
 
 ```js
-const date1 = new Date(Date.UTC(2012, 11, 20, 3, 0 , 0)),
-      number1 = 123456.789;
+function MyNumberType(n) {
+  this.number = n;
+}
 
-console.log(date1.toLocaleString('ar-EG')); // ٢٠‏/١٢‏/٢٠١٢ ٤:٠٠:٠٠ ص
-console.log(number1.toLocaleString('de-DE')); // 123.456,789
+MyNumberType.prototype.valueOf = function() {
+  return this.number;
+};
+
+const object1 = new MyNumberType(4);
+
+console.log(object1 + 3); // 7
 ```
 
 ---
 
 ## Syntax:
-`obj.toLocaleString()`
+`object.valueOf()`
 
 ## Return value:
-A `string` representing the `object`.
+The primitive value of the specified `object`.
 
 ---
 
 ## Description:
-The `Object.prototype.toLocaleString()` method returns a `string` representing the `object`. This method is meant to be overridden by derived `objects` for locale-specific purposes.
+The `Object.prototype.valueOf()` methods returns the primitive value fo the specified `object`.
 
-`Object`'s `toLocaleString` returns the result of calling `toString()`.
+`JS` calls the `valueOf` method to convert an `object` to a primitive value. You rarely need to invoke the `valueOf` method yourself; `JS` automatically invokes it when encountering an `object` where a primitive value is expected.
 
-This `function` is provided to give `objects` a generic `toLocaleString` method, even though not all may use it.  
+By default, the `valueOf` method is inherited by every `object` descended from `Object`. Every built-in core `object` overrides this method to return an appropriate value. If an `object` has no primitive value, `valueOf` returns the `object` itself.
+
+You can use `valueOf` within your own code to convert a built-in `object` into a primitive value. When you create a custom `object`, you can override `Object.prototype.valueOf()` to call a custom method instead of the default `Object` method.
 
 ---
 
@@ -41,13 +49,13 @@ This `function` is provided to give `objects` a generic `toLocaleString` method,
 ---
 
 ## Browser Compatibility:
-| `toLocaleString()` | Browser | Platform |
+| `` | Browser | Platform |
 |---|---|---|
 | <span style="color: lightgreen">**1**</span> | **Chrome** | Desktop | 
 | <span style="color: lightgreen">**12**</span> | **Edge** || 
 | <span style="color: lightgreen">**1**</span> | **Firefox** || 
-| <span style="color: lightgreen">**5.5**</span> | **IE** || 
-| <span style="color: lightgreen">**4**</span> | **Opera** || 
+| <span style="color: lightgreen">**4**</span> | **IE** || 
+| <span style="color: lightgreen">**3**</span> | **Opera** || 
 | <span style="color: lightgreen">**1**</span> | **Safari** || 
 | <span style="color: lightgreen">**1**</span> | **Android Webview** | Mobile | 
 | <span style="color: lightgreen">**18**</span> | **Chrome for Android** || 
@@ -63,4 +71,4 @@ This `function` is provided to give `objects` a generic `toLocaleString` method,
 
 ---
 
-[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toLocaleString)
+[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/valueOf)

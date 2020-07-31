@@ -1,79 +1,83 @@
-##### MM/DD/YYYY
-# `` Overview
-
-```js
-
-```
-
----
-
-## Syntax:
-``
-
-* **** (Optional): 
+##### 7/31/2020
+# `Reflect` Overview
+`Reflect` is a built-in `object` that provides methods for interceptable `JS` operations.  The methods are the ame as those of `proxy` handlers.  `Reflect` is not a `function` object, so it's not constructible.
 
 ---
 
 ## Description:
+Unlike most global `objects`, `Reflect` is not a constructor. You cannot use it with a `new` operator or invoke the `Reflect` object as a `function`. All properties and methods of `Reflect` are static (just like the `Math` object).
 
+The `Reflect` object provides the following static `functions` which have the same names as the proxy handler methods.
 
-### Properties:
-<SUMMARY>
-
-**`<PROPERTY>`**
-  > <DESCRIPTION>
-
-### Methods:
-<SUMMARY>
-
-**`<METHOD>`**
-  > <DESCRIPTION>
-
+Some of these methods are also the same as corresponding methods on `Object`, although they do have some subtle differences between them.
 
 ---
 
-## Properties:
-<SUMMARY>
+## Static Methods: 
+**`Reflect.apply()`**
+  > Calls a target `function` with arguments as specified by the `argumentsList` parameter. See also `Function.prototype.apply()`.
 
-**`<PROPERTY>`**
-  > <DESCRIPTION>
+**`Reflect.construct()`**
+  > The `new` operator as a `function`. Equivalent to calling `new target()`. Also provides the option to specify a different prototype.
 
-## Methods: 
-<SUMMARY>
+**`Reflect.defineProperty()`**
+  > Similar to `Object.defineProperty()`. Returns a `Boolean` that is `true` if the property was successfully defined.
 
-**`<METHOD>`**
-  > <DESCRIPTION>
+**`Reflect.deleteProperty()`**
+  > The `delete` operator as a `function`. Equivalent to calling `delete target[propertyKey]`.
+
+**`Reflect.get()`**
+  > Returns the value of the property. Works like getting a property from an `object` (`target[propertyKey]`) as a `function`.
+
+**`Reflect.getOwnPropertyDescriptor()`**
+  > Similar to `Object.getOwnPropertyDescriptor()`. Returns a property descriptor of the given property if it exists on the `object`,  `undefined` otherwise.
+
+**`Reflect.getPrototypeOf()`**
+  > Same as `Object.getPrototypeOf()`.
+
+**`Reflect.has()`**
+  > Returns a `Boolean` indicating whether the target has the property. Either as own or inherited. Works like the in operator as a `function`.
+
+**`Reflect.isExtensible()`**
+  > Same as `Object.isExtensible()`. Returns a `Boolean` that is `true` if the target is extensible.
+
+**`Reflect.ownKeys()`**
+  > Returns an `array` of the target `object`'s own (not inherited) property keys.
+
+**`Reflect.preventExtensions()`**
+  > Similar to `Object.preventExtensions()`. Returns a `Boolean` that is `true` if the update was successful.
+
+**`Reflect.set()`**
+  > A `function` that assigns values to properties. Returns a `Boolean` that is `true` if the update was successful.
+
+**`Reflect.setPrototypeOf()`**
+  > A `function` that sets the prototype of an `object`. Returns a `Boolean` that is `true` if the update was successful.
 
 ---
 
 ## Specifications
 | Specification | Year | Status | Comment |
 |---|---|---|---|
-| ECMAScript 1st Edition | 1997 | Standard | Initial definition |
-| ECMAScript 3rd Edition | 1999 | Standard |  |
-| ECMAScript 5.1 | 2011 | Standard |  |
-| ECMAScript 2015 (6th Edition) | 2015 | Standard |  |
-| ECMAScript 2016 | 2016 | Standard |  |
-| ECMAScript Latest Draft | 2019 | Draft |  |
+| ECMAScript Latest Draft | 2019 | Draft | Initial definition |
 
 ---
 
 ## Browser Compatibility:
-| `` | Browser | Platform |
+| `Reflect` | Browser | Platform |
 |---|---|---|---|
-| <span style="color: lightgreen">**Yes**</span> | **Chrome** | Desktop | 
+| <span style="color: lightgreen">**49**</span> | **Chrome** | Desktop | 
 | <span style="color: lightgreen">**12**</span> | **Edge** || 
-| <span style="color: lightgreen">**1.5**</span> | **Firefox** || 
-| <span style="color: lightgreen">**9**</span> | **IE** || 
-| <span style="color: lightgreen">**Yes**</span> | **Opera** || 
-| <span style="color: lightgreen">**Yes**</span> | **Safari** || 
-| <span style="color: lightgreen">**Yes**</span> | **Android Webview** | Mobile | 
-| <span style="color: lightgreen">**Yes**</span> | **Chrome for Android** || 
-| <span style="color: lightgreen">**4**</span> | **Firefox for Android** || 
-| <span style="color: lightgreen">**Yes**</span> | **Opera for Android** || 
-| <span style="color: lightgreen">**Yes**</span> | **Safari on iOS** || 
-| <span style="color: lightgreen">**Yes**</span> | **Samsung Internet** || 
-| <span style="color: lightgreen">**Yes**</span> | **Node.js** | Server | 
+| <span style="color: lightgreen">**42**</span> | **Firefox** || 
+| <span style="color: red">**X**</span> | **IE** || 
+| <span style="color: lightgreen">**36**</span> | **Opera** || 
+| <span style="color: lightgreen">**10**</span> | **Safari** || 
+| <span style="color: lightgreen">**49**</span> | **Android Webview** | Mobile | 
+| <span style="color: lightgreen">**49**</span> | **Chrome for Android** || 
+| <span style="color: lightgreen">**42**</span> | **Firefox for Android** || 
+| <span style="color: lightgreen">**36**</span> | **Opera for Android** || 
+| <span style="color: lightgreen">**10**</span> | **Safari on iOS** || 
+| <span style="color: lightgreen">**5.0**</span> | **Samsung Internet** || 
+| <span style="color: lightgreen">**6.0.0**</span> | **Node.js** | Server | 
 
 <span style="color: lightgreen">Full Support</span>  
 <span style="color: grey">Compatibility Unknown</span>  
@@ -81,4 +85,4 @@
 
 ---
 
-[MDN Docs]()
+[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect)

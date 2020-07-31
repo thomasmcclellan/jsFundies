@@ -1,48 +1,34 @@
-##### MM/DD/YYYY
-# `` Overview
-
-```js
-
-```
-
----
-
-## Syntax:
-``
-
-* **** (Optional): 
-
----
-
+##### 7/30/2020
+# `ReferenceError` Overview
 ## Description:
-
-
-### Properties:
-<SUMMARY>
-
-**`<PROPERTY>`**
-  > <DESCRIPTION>
-
-### Methods:
-<SUMMARY>
-
-**`<METHOD>`**
-  > <DESCRIPTION>
-
+The `ReferenceError` object represents an error when a non-existent variable is referenced.
 
 ---
 
-## Properties:
-<SUMMARY>
+### Constructor:
+**`ReferenceError()`**
+  > Creates a new `ReferenceError` `object`.
 
-**`<PROPERTY>`**
-  > <DESCRIPTION>
+---
 
-## Methods: 
-<SUMMARY>
+## Instance Properties:
+**`ReferenceError.prototype.message`**
+  > Error message.  Although `ECMA-262` specifies that `ReferenceError` should provide its own `message` property, in `SpiderMonkey`, it inherits `Error.prototype.message`.
 
-**`<METHOD>`**
-  > <DESCRIPTION>
+**`ReferenceError.prototype.name`**
+  > Error name.  Inherited from `Error`.
+
+**`ReferenceError.prototype.fileName`**
+  > Path to file that raised this error.  Inherited from `Error`.
+
+**`ReferenceError.prototype.lineNumber`**
+  > Line number in file that raised this error.  Inherited from `Error`.
+
+**`ReferenceError.prototype.columnNumber`**
+  > Column number in line that raised this error.  Inherited from `Error`.
+
+**`ReferenceError.prototype.stack`**
+  > Stack trace.  Inherited from `Error`.
 
 ---
 
@@ -59,21 +45,21 @@
 ---
 
 ## Browser Compatibility:
-| `` | Browser | Platform |
-|---|---|---|---|
-| <span style="color: lightgreen">**Yes**</span> | **Chrome** | Desktop | 
-| <span style="color: lightgreen">**12**</span> | **Edge** || 
-| <span style="color: lightgreen">**1.5**</span> | **Firefox** || 
-| <span style="color: lightgreen">**9**</span> | **IE** || 
-| <span style="color: lightgreen">**Yes**</span> | **Opera** || 
-| <span style="color: lightgreen">**Yes**</span> | **Safari** || 
-| <span style="color: lightgreen">**Yes**</span> | **Android Webview** | Mobile | 
-| <span style="color: lightgreen">**Yes**</span> | **Chrome for Android** || 
-| <span style="color: lightgreen">**4**</span> | **Firefox for Android** || 
-| <span style="color: lightgreen">**Yes**</span> | **Opera for Android** || 
-| <span style="color: lightgreen">**Yes**</span> | **Safari on iOS** || 
-| <span style="color: lightgreen">**Yes**</span> | **Samsung Internet** || 
-| <span style="color: lightgreen">**Yes**</span> | **Node.js** | Server | 
+| `ReferenceError` | `ReferenceError()` constructor | Browser | Platform |
+|---|---|---|---|---|
+| <span style="color: lightgreen">**1**</span> | <span style="color: lightgreen">**1**</span> | **Chrome** | Desktop | 
+| <span style="color: lightgreen">**12**</span> | <span style="color: lightgreen">**12**</span> | **Edge** || 
+| <span style="color: lightgreen">**1**</span> | <span style="color: lightgreen">**1**</span> | **Firefox** || 
+| <span style="color: lightgreen">**5.5**</span> | <span style="color: lightgreen">**5.5**</span> | **IE** || 
+| <span style="color: lightgreen">**5**</span> | <span style="color: lightgreen">**5**</span> | **Opera** || 
+| <span style="color: lightgreen">**1**</span> | <span style="color: lightgreen">**1**</span> | **Safari** || 
+| <span style="color: lightgreen">**1**</span> | <span style="color: lightgreen">**1**</span> | **Android Webview** | Mobile | 
+| <span style="color: lightgreen">**18**</span> | <span style="color: lightgreen">**18**</span> | **Chrome for Android** || 
+| <span style="color: lightgreen">**4**</span> | <span style="color: lightgreen">**4**</span> | **Firefox for Android** || 
+| <span style="color: lightgreen">**10.1**</span> | <span style="color: lightgreen">**10.1**</span> | **Opera for Android** || 
+| <span style="color: lightgreen">**1**</span> | <span style="color: lightgreen">**1**</span> | **Safari on iOS** || 
+| <span style="color: lightgreen">**1.0**</span> | <span style="color: lightgreen">**1.0**</span> | **Samsung Internet** || 
+| <span style="color: lightgreen">**0.1.100**</span> | <span style="color: lightgreen">**0.1.100**</span> | **Node.js** | Server | 
 
 <span style="color: lightgreen">Full Support</span>  
 <span style="color: grey">Compatibility Unknown</span>  
@@ -81,4 +67,4 @@
 
 ---
 
-[MDN Docs]()
+[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError)
